@@ -1,0 +1,11 @@
+# robots.txt — Intent Marketing
+# https://intentmarketing.com.br
+
+User-agent: *
+Allow: /
+
+# Bloquear recursos sem valor de indexação
+Disallow: /cdn-cgi/
+
+# Sitemap
+Sitemap: https://intentmarketing.com.br/sitemap.xml

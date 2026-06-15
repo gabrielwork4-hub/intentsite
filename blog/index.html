@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-514YYBJ9YK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-514YYBJ9YK');
+    </script>
+    <title>Blog de Marketing Digital | Intent Marketing</title>
+    <meta name="description" content="Guias práticos sobre SEO, Google Ads, Meta Ads e Landing Pages, escritos por quem executa estratégias reais para PMEs brasileiras todos os dias.">
+    <meta name="keywords" content="blog marketing digital, seo, google ads, meta ads, landing pages, tráfego pago">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://intentmarketing.com.br/blog/">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Blog de Marketing Digital | Intent Marketing">
+    <meta property="og:description" content="Guias práticos sobre SEO, Google Ads, Meta Ads e Landing Pages escritos por quem executa estratégias reais todos os dias.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://intentmarketing.com.br/blog/">
+    <meta property="og:image" content="https://intentmarketing.com.br/blog/images/post1.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Intent Marketing">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog de Marketing Digital | Intent Marketing">
+    <meta name="twitter:description" content="Guias práticos sobre SEO, Google Ads, Meta Ads e Landing Pages.">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"CollectionPage","name":"Blog de Marketing Digital — Intent Marketing","description":"Guias práticos sobre SEO, Google Ads, Meta Ads e Landing Pages de Alta Conversão.","url":"https://intentmarketing.com.br/blog/","publisher":{"@type":"Organization","name":"Intent Marketing","url":"https://intentmarketing.com.br","logo":{"@type":"ImageObject","url":"https://intentmarketing.com.br/logo_dark.png"}}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://intentmarketing.com.br"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://intentmarketing.com.br/blog/"}]}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">
+                <img src="../logo_dark.png" alt="Intent Marketing" class="logo-img">
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="../#servicos" class="nav-link">Serviços</a>
+                <a href="../#resultados" class="nav-link">Resultados</a>
+                <a href="../#portfolio" class="nav-link">Cases</a>
+                <a href="../#sobre" class="nav-link">Sobre</a>
+                <a href="#" class="nav-link active">Blog</a>
+                <a href="../#contato" class="nav-link">Contato</a>
+                <a href="../#contato" class="nav-cta">→ Agendar diagnóstico</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- BLOG HERO -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 0;">
+                <span class="section-tag">Insights de Performance</span>
+                <h1 style="font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 900; line-height: 1.1; margin-bottom: 20px; color: var(--white);">
+                    Nosso blog,<br>suas <em class="hero-em">vendas.</em>
+                </h1>
+                <p>Artigos práticos sobre tráfego pago, SEO e conversão escritos por quem executa estratégias reais de marketing digital todos os dias.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG CONTROLS (SEARCH & FILTERS) -->
+    <section class="blog-controls-section">
+        <div class="container">
+            <div class="blog-controls">
+                <!-- Search bar -->
+                <div class="blog-search-wrapper">
+                    <svg class="blog-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                    </svg>
+                    <input type="text" id="blogSearch" placeholder="Buscar artigos..." class="blog-search-input">
+                </div>
+
+                <!-- Category Filters -->
+                <div class="blog-filters">
+                    <button class="blog-filter-btn active" data-category="all">Todos</button>
+                    <button class="blog-filter-btn" data-category="seo">SEO</button>
+                    <button class="blog-filter-btn" data-category="landing-pages">Landing Pages</button>
+                    <button class="blog-filter-btn" data-category="trafego-pago">Tráfego Pago</button>
+                    <button class="blog-filter-btn" data-category="meta-ads">Meta Ads</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG GRID -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <div class="blog-grid" id="blogGrid">
+                <article class="post-card" data-category="seo" style="border:2px solid #8b5cf6;">
+                    <div class="post-card-image"><img src="images/post2.webp" alt="SEO: Guia Completo para Dominar o Google" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span style="font-size:.72rem;font-weight:700;color:#8b5cf6;margin-right:4px;">⭐ Guia Central ·</span><span class="post-category">SEO</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>SEO: Guia Completo para Dominar o Google</h3>
+                        <p class="post-excerpt">O que é SEO, como funciona o algoritmo, os 4 pilares e a estratégia de Topic Cluster para dominar o Google.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-guia-completo-seo.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post3.webp" alt="O que é SEO?" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>O que é SEO?</h3>
+                        <p class="post-excerpt">Entenda o que é SEO, como o Google decide quem aparece primeiro e por que é o canal com melhor ROI no longo prazo.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-o-que-e-seo.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post1.webp" alt="SEO Local: Como Dominar as Buscas na Sua Cidade" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO Local: Como Dominar as Buscas na Sua Cidade</h3>
+                        <p class="post-excerpt">Como otimizar para o Google Maps, Google Meu Negócio e keywords locais para atrair clientes na sua região.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-local.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post4.webp" alt="Como Aparecer no Google" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Como Aparecer no Google</h3>
+                        <p class="post-excerpt">Guia passo a passo para indexar seu site, otimizar title e meta description e ranquear na primeira página.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-como-aparecer-no-google.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post5.webp" alt="SEO On-Page: Checklist Completo" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>SEO On-Page: Checklist Completo</h3>
+                        <p class="post-excerpt">Title tag, H1, URL, meta description, imagens, links internos — tudo que precisa estar certo dentro do seu site.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-on-page.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post8.webp" alt="Pesquisa de Palavras-Chave" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Pesquisa de Palavras-Chave</h3>
+                        <p class="post-excerpt">Como pesquisar keywords, avaliar volume e KD, e montar um plano que gera tráfego real para o seu site.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-pesquisa-palavras-chave.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post9.webp" alt="Google Meu Negócio: Configuração e Otimização" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Google Meu Negócio: Configuração e Otimização</h3>
+                        <p class="post-excerpt">Como criar, verificar e otimizar o Google Business Profile para aparecer no Google Maps.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-google-meu-negocio.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post6.webp" alt="SEO Off-Page e Link Building" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>SEO Off-Page e Link Building</h3>
+                        <p class="post-excerpt">O que é link building, como conseguir backlinks de qualidade no Brasil e como construir autoridade de domínio.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-off-page.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post7.webp" alt="SEO Técnico para Não Técnicos" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO Técnico para Não Técnicos</h3>
+                        <p class="post-excerpt">Core Web Vitals, HTTPS, sitemap, robots.txt e schema markup — a base que o Google precisa para indexar bem.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-tecnico.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post10.webp" alt="SEO para Clínicas" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO para Clínicas</h3>
+                        <p class="post-excerpt">Como atrair mais pacientes pelo Google com keywords por especialidade, E-E-A-T e blog clínico.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-clinicas.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post11.webp" alt="SEO para Advocacia" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO para Advocacia</h3>
+                        <p class="post-excerpt">Como captar clientes jurídicos pelo Google dentro das normas do Provimento 205/2021 da OAB.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-advocacia.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post12.webp" alt="Core Web Vitals: Como Melhorar" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Core Web Vitals: Como Melhorar</h3>
+                        <p class="post-excerpt">O que são LCP, INP e CLS, como medi-los e como corrigir para melhorar o ranqueamento.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-core-web-vitals.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post13.webp" alt="Google Search Console: Guia Completo" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Google Search Console: Guia Completo</h3>
+                        <p class="post-excerpt">Como configurar, analisar keywords, identificar erros de indexação e usar o GSC para crescer tráfego orgânico.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-google-search-console.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post14.webp" alt="SEO de Conteúdo" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO de Conteúdo</h3>
+                        <p class="post-excerpt">Como mapear intenção de busca, estruturar artigos para ranquear e atualizar conteúdo antigo com resultado.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-conteudo-seo.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post15.webp" alt="Ferramentas de SEO 2026" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Ferramentas de SEO 2026</h3>
+                        <p class="post-excerpt">Comparativo completo de ferramentas gratuitas e pagas: GSC, Ahrefs, Semrush e Screaming Frog.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-ferramentas-seo.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post16.webp" alt="Link Building no Brasil" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Link Building no Brasil</h3>
+                        <p class="post-excerpt">Estratégias comprovadas para conseguir backlinks de qualidade: guest post, link bait e parcerias editoriais.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-link-building.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post17.webp" alt="SEO para Odontologia" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO para Odontologia</h3>
+                        <p class="post-excerpt">Como dentistas e clínicas odontológicas podem atrair mais pacientes pelo Google Maps e pela busca orgânica.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-odontologia.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post18.webp" alt="SEO para Construtoras e Imobiliárias" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>SEO para Construtoras e Imobiliárias</h3>
+                        <p class="post-excerpt">Páginas por empreendimento, blog imobiliário e SEO local para gerar leads qualificados organicamente.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-construtoras.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post19.webp" alt="SEO para E-commerce" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO para E-commerce</h3>
+                        <p class="post-excerpt">Arquitetura de URLs, otimização de páginas de produto e categoria, schema Product e blog para lojas virtuais.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-ecommerce.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post20.webp" alt="SEO para Pequenas Empresas" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO para Pequenas Empresas</h3>
+                        <p class="post-excerpt">Como PMEs competem e vencem no Google usando keywords long tail, SEO local e conteúdo especializado.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-pequenas-empresas.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post21.webp" alt="SEO White Hat vs Black Hat" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>SEO White Hat vs Black Hat</h3>
+                        <p class="post-excerpt">Diferenças, riscos de penalização e o que realmente funciona para construir autoridade de forma sustentável.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-white-hat-black-hat.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post22.webp" alt="Como Fazer Auditoria de SEO" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Como Fazer Auditoria de SEO</h3>
+                        <p class="post-excerpt">Checklist completo: auditoria técnica, on-page, conteúdo e backlinks — com priorização de correções.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-auditoria-seo.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image"><img src="images/post23.webp" alt="Quanto Custa SEO em 2026?" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span style="font-size:.72rem;font-weight:700;color:#10b981;margin-right:4px;">💰 Alta Conversão ·</span><span class="post-category">SEO</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Quanto Custa SEO em 2026?</h3>
+                        <p class="post-excerpt">Tabela de preços por faixa, o que está incluído, como calcular o ROI e quando o SEO não vale a pena.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-quanto-custa-seo.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                
+                <!-- POST 1 -->
+
+                <!-- POST 2 -->
+
+                <!-- POST 3 -->
+
+                <!-- POST 4 -->
+
+                <!-- POST 5 -->
+
+                <!-- POST 6 -->
+
+                <!-- POST 7 -->
+
+                <!-- POST 8 -->
+
+                <!-- POST 9 -->
+
+                <!-- POST 10 -->
+
+                <!-- POST 11 -->
+
+                <!-- POST 12 -->
+
+                <!-- POST 13 -->
+
+                <!-- POST 14 -->
+
+                <!-- POST 15 -->
+
+                <!-- POST 16 -->
+
+                <!-- POST 17 -->
+
+                <!-- POST 18 -->
+
+                <!-- POST 19 -->
+
+                <!-- POST 20 -->
+
+                <!-- POST 21 -->
+
+                <!-- POST 22 -->
+
+                <!-- POST 23 -->
+
+                <!-- POST 24 -->
+
+                <!-- POST 25 -->
+
+
+                <!-- LP POST 26 -->
+                <article class="post-card" data-category="landing-pages" style="border: 2px solid #8b5cf6;">
+                    <div class="post-card-image">
+                        <img src="images/post26.webp" alt="Landing Page: O Guia Completo para Converter Visitantes em Clientes" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span style="font-size:0.75rem;color:#8b5cf6;font-weight:600;">⭐ Guia Central · </span><span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Landing Page: O Guia Completo para Converter Visitantes em Clientes</h3>
+                        <p class="post-excerpt">Tudo sobre landing page em um único guia: o que é, como criar, exemplos reais de alta conversão, ferramentas e estratégias usadas pela Intent Marketing.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-guia-completo-landing-page.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP NOVO: Quanto custa um site -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post26.webp" alt="Quanto Custa um Site Profissional em 2026?" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>12 min de leitura</span>
+                        </div>
+                        <h3>Quanto Custa um Site Profissional em 2026?</h3>
+                        <p class="post-excerpt">Faixas de preço reais por tipo de site no Brasil, o que faz o valor variar, os custos recorrentes que ninguém conta e quando uma landing page basta.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-quanto-custa-site.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BOFU: Quanto custa agência -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post44.webp" alt="Quanto Custa uma Agência de Marketing Digital em 2026?" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Tráfego Pago</span><span>•</span><span>11 min de leitura</span></div>
+                        <h3>Quanto Custa uma Agência de Marketing Digital?</h3>
+                        <p class="post-excerpt">Faixas de fee reais por escopo, a diferença entre verba de mídia e fee, e como saber se o investimento se paga.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-quanto-custa-agencia-marketing.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+
+                <!-- BOFU: Como escolher agência de tráfego -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post43.webp" alt="Como Escolher uma Agência de Tráfego Pago" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Tráfego Pago</span><span>•</span><span>12 min de leitura</span></div>
+                        <h3>Como Escolher uma Agência de Tráfego Pago</h3>
+                        <p class="post-excerpt">As 12 perguntas para fazer antes de assinar e os 7 sinais de alerta de uma agência que vende ilusão.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-como-escolher-agencia-trafego.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+
+                <!-- BOFU: Marketing para advogados -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post47.webp" alt="Marketing para Advogados dentro das regras da OAB" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Tráfego Pago</span><span>•</span><span>13 min de leitura</span></div>
+                        <h3>Marketing para Advogados: Captação Dentro da OAB</h3>
+                        <p class="post-excerpt">SEO, Google Ads e landing pages para advocacia respeitando o Provimento 205 — com caso real de CPL −50%.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-marketing-para-advogados.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+
+                <!-- BOFU: SEO ou tráfego pago -->
+                <article class="post-card" data-category="seo">
+                    <div class="post-card-image">
+                        <img src="images/post1.webp" alt="SEO ou Tráfego Pago: onde investir com R$ 2.000/mês" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">SEO</span><span>•</span><span>11 min de leitura</span></div>
+                        <h3>SEO ou Tráfego Pago com R$ 2.000/mês?</h3>
+                        <p class="post-excerpt">Matriz de decisão por tipo de negócio e o que 3 clientes reais fizeram com seu orçamento de marketing.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-seo-ou-trafego-pago-2000.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+
+                <!-- LP POST 27 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post27.webp" alt="O que é Landing Page? Tudo que Você Precisa Saber" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>O que é Landing Page? Tudo que Você Precisa Saber</h3>
+                        <p class="post-excerpt">Entenda de uma vez o que é landing page, quais são os tipos, para que serve e por que ela converte muito mais que um site comum. Com exemplos práticos.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-o-que-e-landing-page.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 28 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post28.webp" alt="Landing Page vs Site: Qual Escolher para Cada Objetivo?" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Landing Page vs Site: Qual Escolher para Cada Objetivo?</h3>
+                        <p class="post-excerpt">Entenda a diferença entre landing page e site institucional, quando usar cada um e como combinar os dois para maximizar resultados em campanhas digitais.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-landing-page-vs-site.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 29 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post29.webp" alt="10 Elementos de uma Landing Page de Alta Conversão (Checklist Completo)" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>10 Elementos de uma Landing Page de Alta Conversão (Checklist Completo)</h3>
+                        <p class="post-excerpt">Descubra os 10 elementos obrigatórios de uma landing page de alta conversão com checklist completo e exemplos práticos para aumentar sua taxa de conversão.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-elementos-landing-page-alta-conversao.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 30 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post30.webp" alt="Como Criar uma Landing Page do Zero: 7 Passos Práticos" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Como Criar uma Landing Page do Zero: 7 Passos Práticos</h3>
+                        <p class="post-excerpt">Aprenda como criar uma landing page do zero em 7 passos: planejamento, copy, design, ferramentas e configuração de rastreamento. Guia prático com e sem código.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-como-criar-landing-page.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 31 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post31.webp" alt="Exemplos de Landing Pages de Alta Conversão por Nicho" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Exemplos de Landing Pages de Alta Conversão por Nicho</h3>
+                        <p class="post-excerpt">Veja exemplos reais de landing pages de alta conversão por nicho — clínicas, advogados, imobiliárias, SaaS e mais. Com análise dos elementos que fazem cada uma converter.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-exemplos-landing-pages.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 32 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post32.webp" alt="Landing Page com IA: Como Criar em Minutos com Inteligência Artificial" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Landing Page com IA: Como Criar em Minutos com Inteligência Artificial</h3>
+                        <p class="post-excerpt">Aprenda a criar landing pages com inteligência artificial: as melhores ferramentas de IA para copy, design e otimização de conversão com exemplos práticos.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-landing-page-com-ia.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 33 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post33.webp" alt="Copywriting para Landing Page: O Método para Headlines que Convertem" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Copywriting para Landing Page: O Método para Headlines que Convertem</h3>
+                        <p class="post-excerpt">Aprenda as técnicas de copywriting para landing pages: como escrever headlines irresistíveis, CTAs que convertem e copy que transforma visitantes em clientes.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-copywriting-landing-page.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 34 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post34.webp" alt="Como Aumentar a Taxa de Conversão da sua Landing Page: 8 Técnicas Comprovadas" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Como Aumentar a Taxa de Conversão da sua Landing Page: 8 Técnicas Comprovadas</h3>
+                        <p class="post-excerpt">Aprenda como aumentar a taxa de conversão da sua landing page com técnicas comprovadas: testes A/B, otimização de CTA, velocidade e UX para mais resultados.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-taxa-de-conversao-landing-page.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 35 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post35.webp" alt="Quanto Custa uma Landing Page Profissional? (Tabela por Faixa 2026)" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span style="font-size:0.75rem;color:#10b981;font-weight:600;">💰 Alta Conversão · </span><span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Quanto Custa uma Landing Page Profissional? (Tabela por Faixa 2026)</h3>
+                        <p class="post-excerpt">Descubra quanto custa uma landing page profissional no Brasil em 2026 — por faixa de investimento, o que está incluído e qual o ROI esperado para cada tipo.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-quanto-custa-landing-page.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 36 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post36.webp" alt="Landing Page para Advogados: Capte Clientes Dentro das Normas da OAB" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Landing Page para Advogados: Capte Clientes Dentro das Normas da OAB</h3>
+                        <p class="post-excerpt">Aprenda a criar landing pages para escritórios de advocacia que captam clientes dentro das normas da OAB. Estrutura, copy e exemplos para áreas de família, trabalhista e mais.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-landing-page-para-advogados.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 37 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post37.webp" alt="Landing Page para Clínicas: Atraia Mais Pacientes pelo Google" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Landing Page para Clínicas: Atraia Mais Pacientes pelo Google</h3>
+                        <p class="post-excerpt">Aprenda a criar landing pages para clínicas médicas, odontológicas e de estética que convertem visitantes em pacientes. Estrutura, copy e exemplos práticos.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-landing-page-para-clinicas.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 38 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post38.webp" alt="Landing Page para Imobiliárias: Gere Leads Qualificados de Compradores" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Landing Page para Imobiliárias: Gere Leads Qualificados de Compradores</h3>
+                        <p class="post-excerpt">Aprenda a criar landing pages para imobiliárias e construtoras que geram leads qualificados de compradores e locatários. Estrutura, copy e estratégias para o mercado imobiliário.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-landing-page-para-imobiliarias.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LP POST 39 -->
+                <article class="post-card" data-category="landing-pages">
+                    <div class="post-card-image">
+                        <img src="images/post39.webp" alt="Landing Page para Cursos Online: Como Vender mais com a Página Certa" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Landing Pages</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Landing Page para Cursos Online: Como Vender mais com a Página Certa</h3>
+                        <p class="post-excerpt">Aprenda a criar landing pages de alta conversão para cursos online e infoprodutos. Estrutura, copy, urgência e estratégias para maximizar as vendas do seu lançamento.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-landing-page-para-cursos.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 40 -->
+                <article class="post-card" data-category="trafego-pago" style="border:2px solid #8b5cf6;">
+                    <div class="post-card-image">
+                        <img src="images/post40.webp" alt="Tráfego Pago: Guia Completo" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span style="font-size:0.72rem;font-weight:700;color:#6d28d9;margin-right:4px;">⭐ Guia Central ·</span><span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Tráfego Pago: Guia Completo</h3>
+                        <p class="post-excerpt">Tudo sobre tráfego pago: o que é, Google Ads, Meta Ads, quanto custa e como medir resultados.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-guia-completo-trafego-pago.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 41 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post41.webp" alt="O que é Tráfego Pago?" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>O que é Tráfego Pago?</h3>
+                        <p class="post-excerpt">Entenda o que é tráfego pago, como funciona e quando vale a pena investir. Guia para iniciantes.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-o-que-e-trafego-pago.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 42 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post42.webp" alt="Gestor de Tráfego: O que Faz e Quanto Cobra" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span style="font-size:0.72rem;font-weight:700;color:#6d28d9;margin-right:4px;">🔥 22K buscas ·</span><span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Gestor de Tráfego: O que Faz e Quanto Cobra</h3>
+                        <p class="post-excerpt">O que faz um gestor de tráfego, quanto cobra e como contratar o profissional certo para seu negócio.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-gestor-de-trafego.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 43 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post43.webp" alt="Tráfego Pago vs Orgânico" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Tráfego Pago vs Orgânico</h3>
+                        <p class="post-excerpt">Diferenças, quando usar cada estratégia e como combinar SEO e Google Ads para maximizar resultados.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-trafego-pago-vs-organico.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 44 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post44.webp" alt="Como Funciona o Google Ads" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Como Funciona o Google Ads</h3>
+                        <p class="post-excerpt">Leilão, índice de qualidade, tipos de campanha e como criar sua primeira campanha passo a passo.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-como-funciona-google-ads.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 45 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post45.webp" alt="Tipos de Campanha no Google Ads" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Tipos de Campanha no Google Ads</h3>
+                        <p class="post-excerpt">Pesquisa, Display, Shopping, Performance Max e Vídeo: qual usar para cada objetivo de marketing.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-tipos-de-campanha-google-ads.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 46 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post46.webp" alt="Remarketing no Google Ads" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Remarketing no Google Ads</h3>
+                        <p class="post-excerpt">Como recuperar visitantes que não converteram com remarketing segmentado e criativos estratégicos.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-remarketing-google-ads.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 47 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post47.webp" alt="Quanto Custa Anunciar no Google Ads?" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span style="font-size:0.72rem;font-weight:700;color:#6d28d9;margin-right:4px;">💰 Alta Conversão ·</span><span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Quanto Custa Anunciar no Google Ads?</h3>
+                        <p class="post-excerpt">Tabela de CPC por nicho, orçamento mínimo recomendado e como calcular o ROI antes de investir.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-quanto-custa-google-ads.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 48 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post48.webp" alt="Como Fazer Tráfego Pago do Zero" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Como Fazer Tráfego Pago do Zero</h3>
+                        <p class="post-excerpt">Guia passo a passo: keywords, campanha, landing page, rastreamento e primeiras otimizações.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-como-fazer-trafego-pago.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 49 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post49.webp" alt="Google Ads vs Meta Ads" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Google Ads vs Meta Ads</h3>
+                        <p class="post-excerpt">Compare as duas plataformas e saiba qual usar para maximizar o retorno do seu investimento.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-google-ads-vs-meta-ads.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 50 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post50.webp" alt="Como Medir o ROI do Tráfego Pago" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Como Medir o ROI do Tráfego Pago</h3>
+                        <p class="post-excerpt">Métricas que importam: CPC, CPL, CPA, ROAS e como configurar rastreamento no GA4 e Meta Ads.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-roi-trafego-pago.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 51 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post51.webp" alt="Google Ads para Advogados" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Google Ads para Advogados</h3>
+                        <p class="post-excerpt">Como captar clientes com anúncios no Google dentro das normas da OAB. Keywords e orçamento.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-google-ads-para-advogados.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 52 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post52.webp" alt="Tráfego Pago para Clínicas" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>4 min de leitura</span>
+                        </div>
+                        <h3>Tráfego Pago para Clínicas</h3>
+                        <p class="post-excerpt">Google Ads para clínicas médicas e odontológicas: keywords, orçamento e mais agendamentos.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-trafego-pago-para-clinicas.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TP POST 53 -->
+                <article class="post-card" data-category="trafego-pago">
+                    <div class="post-card-image">
+                        <img src="images/post53.webp" alt="Tráfego Pago para E-commerce" class="post-card-img">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tráfego Pago</span>
+                            <span>•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <h3>Tráfego Pago para E-commerce</h3>
+                        <p class="post-excerpt">Google Shopping, Performance Max e Meta Ads para escalar vendas online com estrutura de funil completa.</p>
+                        <div class="post-card-footer">
+                            <span class="post-author">Gabriel M.</span>
+                            <a href="post-trafego-pago-para-ecommerce.html" class="post-readmore">Ler artigo →</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="post-card" data-category="meta-ads" style="border:2px solid #0ea5e9;">
+                    <div class="post-card-image"><img src="images/post54.webp" alt="Meta Ads: Guia Completo" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span style="font-size:.72rem;font-weight:700;color:#0ea5e9;margin-right:4px;">⭐ Guia Central ·</span><span class="post-category">Meta Ads</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Meta Ads: Guia Completo</h3>
+                        <p class="post-excerpt">Facebook e Instagram para empresas — o que é, como funciona, públicos, criativos e resultados.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-guia-completo-meta-ads.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post55.webp" alt="O que é Meta Ads?" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>O que é Meta Ads?</h3>
+                        <p class="post-excerpt">Entenda o que é Meta Ads, como funciona o sistema de anúncios do Facebook e Instagram.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-o-que-e-meta-ads.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post56.webp" alt="Gerenciador de Anúncios: Como Usar" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span style="font-size:.72rem;font-weight:700;color:#0ea5e9;margin-right:4px;">🔥 178K buscas ·</span><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Gerenciador de Anúncios: Como Usar</h3>
+                        <p class="post-excerpt">Guia completo do Gerenciador de Anúncios do Meta — do acesso à primeira campanha ativa.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-gerenciador-de-anuncios.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post57.webp" alt="Meta Business Suite: Guia Completo" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Meta Business Suite: Guia Completo</h3>
+                        <p class="post-excerpt">O que é e como usar o Meta Business Suite para gerenciar Facebook, Instagram e anúncios.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-meta-business-suite.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post58.webp" alt="Pixel do Facebook: Instalar e Configurar" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Pixel do Facebook: Instalar e Configurar</h3>
+                        <p class="post-excerpt">O que é o Meta Pixel, como instalar, configurar eventos de conversão e usar a CAPI.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-pixel-facebook.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post59.webp" alt="Públicos no Meta Ads" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Públicos no Meta Ads</h3>
+                        <p class="post-excerpt">Personalizado, Lookalike e Advantage+: como criar e usar cada tipo de público.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-publicos-meta-ads.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post60.webp" alt="Criativos para Meta Ads" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Criativos para Meta Ads</h3>
+                        <p class="post-excerpt">Formatos, tamanhos, copy e hooks que param o scroll — como criar anúncios de alta performance.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-criativos-meta-ads.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post61.webp" alt="Instagram Ads: Como Anunciar" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Instagram Ads: Como Anunciar</h3>
+                        <p class="post-excerpt">Como criar anúncios no Instagram, formatos, segmentação e estratégias para gerar resultados.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-instagram-ads.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post62.webp" alt="Remarketing no Meta Ads" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Remarketing no Meta Ads</h3>
+                        <p class="post-excerpt">Como recuperar visitantes com retargeting no Facebook e Instagram — sequências e criativos.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-remarketing-meta-ads.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post63.webp" alt="Quanto Custa Meta Ads?" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span style="font-size:.72rem;font-weight:700;color:#0ea5e9;margin-right:4px;">💰 Alta Conversão ·</span><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Quanto Custa Meta Ads?</h3>
+                        <p class="post-excerpt">Tabela de CPM, CPC e CPL por nicho, orçamento mínimo e cálculo de ROI antes de investir.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-quanto-custa-meta-ads.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post64.webp" alt="Meta Ads para E-commerce" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>4 min de leitura</span></div>
+                        <h3>Meta Ads para E-commerce</h3>
+                        <p class="post-excerpt">Catálogo, Advantage+ Shopping e retargeting de carrinho abandonado para lojas virtuais.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-meta-ads-para-ecommerce.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post65.webp" alt="Meta Ads para Clínicas" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Meta Ads para Clínicas</h3>
+                        <p class="post-excerpt">Como atrair pacientes pelo Instagram e Facebook com anúncios dentro das normas do CFM.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-meta-ads-para-clinicas.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post66.webp" alt="Meta Ads para Cursos Online" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Meta Ads para Cursos Online</h3>
+                        <p class="post-excerpt">Estratégia completa de lançamento — CPL, aquecimento, carrinho e escala para infoprodutos.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-meta-ads-para-cursos.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+                <article class="post-card" data-category="meta-ads">
+                    <div class="post-card-image"><img src="images/post67.webp" alt="Meta Ads para Negócios Locais" class="post-card-img"></div>
+                    <div class="post-card-content">
+                        <div class="post-meta"><span class="post-category">Meta Ads</span><span>•</span><span>5 min de leitura</span></div>
+                        <h3>Meta Ads para Negócios Locais</h3>
+                        <p class="post-excerpt">Como atrair clientes na sua cidade com segmentação geográfica e criativos autênticos.</p>
+                        <div class="post-card-footer"><span class="post-author">Gabriel M.</span><a href="post-meta-ads-para-negocios-locais.html" class="post-readmore">Ler artigo →</a></div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../" class="nav-logo">
+                        <img src="../logo_dark.png" alt="Intent Marketing" class="logo-img">
+                    </a>
+                    <p>Estratégia, criatividade e dados a serviço do crescimento do seu negócio digital.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/intent__marketing" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://share.google/WsPvqyOSzcIV0vkmx" target="_blank" rel="noopener noreferrer" aria-label="Google Meu Negócio" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 11v2.4h5.6c-.24 1.46-1.68 4.28-5.6 4.28-3.37 0-6.12-2.79-6.12-6.22S8.63 5.24 12 5.24c1.92 0 3.2.82 3.94 1.52l2.68-2.58C16.92 2.6 14.66 1.6 12 1.6 6.84 1.6 2.68 5.76 2.68 11.46S6.84 21.32 12 21.32c5.96 0 9.9-4.18 9.9-10.08 0-.68-.07-1.2-.16-1.72H12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5>Serviços</h5>
+                        <a href="../#servicos">Landing Pages</a>
+                        <a href="../#servicos">Sites Comerciais</a>
+                        <a href="../#servicos">Google Ads</a>
+                        <a href="../#servicos">Meta Ads</a>
+                        <a href="../#servicos">SEO</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Empresa</h5>
+                        <a href="../#sobre">Sobre nós</a>
+                        <a href="../#portfolio">Portfólio</a>
+                        <a href="../#contato">Contato</a>
+                        <a href="../privacidade.html">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Intent Marketing. Todos os direitos reservados.</p>
+                <p class="footer-made">Feito com 🧡 pela Intent Marketing</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511912809347?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Intent%20Marketing%20e%20quero%20um%20diagn%C3%B3stico." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+    <script src="blog-script.js"></script>
+</body>
+</html>
+            

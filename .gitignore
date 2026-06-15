@@ -1,0 +1,19 @@
+# Nao faz parte do site oficial
+21st/
+agentes/
+
+# Planilhas de pautas / planejamento
+*.xlsx
+
+# Scripts de build / geracao (nao servidos)
+*.py
+
+# Temporarios / ferramentas
+_lh*.json
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
