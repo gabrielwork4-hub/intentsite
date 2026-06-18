@@ -2068,3 +2068,44 @@ input, select, textarea {
 /* ── OFFSET DO CONTEÚDO DOS POSTS SOB O NAVBAR FIXO ── */
 #navbar + .breadcrumb-bar { margin-top: var(--nav-h); padding: 14px 0; }
 @media (max-width: 768px){ #navbar + .breadcrumb-bar { padding: 10px 0; } }
+/* ── AUTOR: link no author-bar do topo ── */
+.author-bar-link { color: var(--white); text-decoration: none; }
+.author-bar-link:hover { text-decoration: underline; text-decoration-color: #E5673C; text-underline-offset: 3px; }
+
+/* ── CAIXA DE AUTOR (rodapé do post) ── */
+.author-box { margin: 48px 0 8px; }
+.author-box .container { max-width: 820px; }
+.author-box-inner {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+.author-box-avatar {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #C1440E, #E5673C);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+.author-box-info { display: flex; flex-direction: column; gap: 6px; }
+.author-box-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); }
+.author-box-name { font-size: 1.15rem; font-weight: 800; color: var(--white); text-decoration: none; width: fit-content; }
+.author-box-name:hover { text-decoration: underline; text-decoration-color: #E5673C; text-underline-offset: 3px; }
+.author-box-bio { font-size: 0.92rem; line-height: 1.6; color: var(--text-muted); margin: 2px 0 4px; }
+.author-box-cta { font-size: 0.9rem; font-weight: 700; color: #E5673C; text-decoration: none; width: fit-content; }
+.author-box-cta:hover { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 600px) {
+  .author-box-inner { flex-direction: column; gap: 14px; padding: 20px; }
+  .author-box-avatar { width: 56px; height: 56px; font-size: 1.1rem; }
+}
