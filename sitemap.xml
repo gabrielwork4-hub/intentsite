@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://intentmarketing.com.br/blog/post-core-web-vitals</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -110,7 +110,7 @@
   </url>
   <url>
     <loc>https://intentmarketing.com.br/blog/post-link-building</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -443,5 +443,23 @@
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://intentmarketing.com.br/blog/post-topic-clusters</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://intentmarketing.com.br/blog/post-geo</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://intentmarketing.com.br/blog/post-ia-generativa-seo</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>
