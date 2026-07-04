@@ -1,5 +1,5 @@
 # robots.txt — Intent Marketing
-# https://intentmarketing.com.br
+# https://www.intentmarketing.com.br
 
 User-agent: *
 Allow: /
@@ -8,4 +8,4 @@ Allow: /
 Disallow: /cdn-cgi/
 
 # Sitemap
-Sitemap: https://intentmarketing.com.br/sitemap.xml
+Sitemap: https://www.intentmarketing.com.br/sitemap.xml
