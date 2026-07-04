@@ -538,7 +538,8 @@ input, select, textarea {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
-    cursor: default;
+    cursor: pointer;
+    display: block;
 }
 .service-card::before {
     content: '';
