@@ -7,5 +7,71 @@ Allow: /
 # Bloquear recursos sem valor de indexação
 Disallow: /cdn-cgi/
 
-# Sitemap
+# --------------------------------------------------------------------
+# Crawlers de IA / LLM — liberação explícita (GEO)
+# Declarados individualmente para que uma futura restrição no grupo "*"
+# não remova, por acidente, o acesso dos modelos ao conteúdo do blog.
+# --------------------------------------------------------------------
+
+# OpenAI — treinamento
+User-agent: GPTBot
+Allow: /
+
+# OpenAI — busca do ChatGPT
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI — navegação sob demanda do usuário
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic — Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google — Gemini / AI Overviews (grounding)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl — corpus usado no treino de vários modelos
+User-agent: CCBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Sitemaps
 Sitemap: https://www.intentmarketing.com.br/sitemap.xml
