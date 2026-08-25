@@ -1,0 +1,27 @@
+nicho,metrica,canal,fonte,valor_min,valor_max,unidade,observacao
+Advocacia (geral),CPL,Google Ads,Intent Marketing,120,250,BRL,Canal recomendado para o nicho
+Advocacia (geral),CPL,Meta Ads,Intent Marketing,80,180,BRL,
+Advocacia criminal,CPL,Google Ads,Intent Marketing,60,150,BRL,Apos reestruturacao; reducao de 50% sobre a linha de base. Canal recomendado
+Advocacia criminal,CPL,Meta Ads,Intent Marketing,100,200,BRL,
+Clinica odontologica,CPL,Google Ads,Intent Marketing,55,120,BRL,
+Clinica odontologica,CPL,Meta Ads,Intent Marketing,18,55,BRL,Ambos os canais recomendados
+Clinica estetica,CPL,Google Ads,Intent Marketing,40,90,BRL,
+Clinica estetica,CPL,Meta Ads,Intent Marketing,18,45,BRL,Canal recomendado para o nicho
+Mecanica automotiva,CPL,Google Ads,Intent Marketing,15,35,BRL,Canal recomendado para o nicho
+Mecanica automotiva,CPL,Meta Ads,Intent Marketing,20,50,BRL,
+Confeitaria / Food,CPL,Google Ads,Intent Marketing,8,20,BRL,Canal recomendado para o nicho
+Confeitaria / Food,CPL,Meta Ads,Intent Marketing,5,15,BRL,
+Imobiliaria / Construtora,CPL,Google Ads,Intent Marketing,80,200,BRL,Canal recomendado para o nicho
+Imobiliaria / Construtora,CPL,Meta Ads,Intent Marketing,60,150,BRL,
+Cursos online,CPL,Google Ads,Intent Marketing,12,30,BRL,
+Cursos online,CPL,Meta Ads,Intent Marketing,8,25,BRL,Canal recomendado para o nicho
+Confeitaria / Food,ROAS,Google Ads,Intent Marketing,7,7,x,Case documentado
+Confeitaria / Food,ROAS,Google Ads,Mercado,2,3,x,
+E-commerce moda,ROAS,Meta Ads + Google Ads,Intent Marketing,3.2,3.2,x,
+E-commerce moda,ROAS,Meta Ads + Google Ads,Mercado,2.5,3,x,
+E-commerce suplementos,ROAS,Meta Ads + Google Ads,Intent Marketing,4.1,4.1,x,
+E-commerce suplementos,ROAS,Meta Ads + Google Ads,Mercado,3,4,x,
+E-commerce geral,ROAS,Meta Ads + Google Ads,Intent Marketing,3.8,3.8,x,
+E-commerce geral,ROAS,Meta Ads + Google Ads,Mercado,2.5,3.5,x,
+Cursos online (lancamento),ROAS,Meta Ads,Intent Marketing,8,15,x,
+Cursos online (lancamento),ROAS,Meta Ads,Mercado,5,10,x,
