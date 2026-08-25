@@ -2194,6 +2194,11 @@ input, select, textarea {
 .svc-list a { color: #E5673C; text-decoration: none; font-weight: 600; }
 .svc-list a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
+/* links dentro do corpo das paginas de servico: sem isto herdam a cor do
+   texto e ficam indistinguiveis de texto comum */
+.svc-main p a, .svc-answer a, .svc-faq-item p a, .svc-fit-col li a { color: #E5673C; text-decoration: none; font-weight: 600; }
+.svc-main p a:hover, .svc-answer a:hover, .svc-faq-item p a:hover, .svc-fit-col li a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
 /* etapas do processo */
 .svc-steps { list-style: none; counter-reset: svcstep; padding: 0; margin: 22px 0 0; display: flex; flex-direction: column; gap: 4px; }
 .svc-steps li { counter-increment: svcstep; position: relative; padding: 0 0 26px 46px; border-left: 1px solid var(--border); margin-left: 13px; }
