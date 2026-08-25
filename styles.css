@@ -2187,6 +2187,11 @@ input, select, textarea {
 .svc-card-n { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 1.5px; color: var(--orange); margin-bottom: 10px; }
 .svc-card p { font-size: 0.93rem; margin: 0; }
 
+/* lista simples com marcador proprio */
+.svc-list { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-direction: column; gap: 11px; }
+.svc-list li { position: relative; padding-left: 26px; line-height: 1.6; color: var(--text-muted); }
+.svc-list li::before { content: "—"; position: absolute; left: 0; top: 0; color: var(--orange); font-weight: 800; }
+
 /* etapas do processo */
 .svc-steps { list-style: none; counter-reset: svcstep; padding: 0; margin: 22px 0 0; display: flex; flex-direction: column; gap: 4px; }
 .svc-steps li { counter-increment: svcstep; position: relative; padding: 0 0 26px 46px; border-left: 1px solid var(--border); margin-left: 13px; }
