@@ -149,7 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ── CONTACT FORM MULTI-STEP ──────────────────
-    const form       = document.getElementById('contactForm');
+    // Páginas sem o formulário de contato (rotas de serviço, privacidade) também
+    // carregam este script. Sem este fallback, o primeiro form.querySelectorAll
+    // lança e mata todo o restante do arquivo — inclusive o tilt dos cards.
+    const form       = document.getElementById('contactForm')
+                    || { querySelectorAll: () => [], querySelector: () => null,
+                         addEventListener: () => {}, style: {} };
     const submitBtn  = document.getElementById('submitBtn');
     const successMsg = document.getElementById('formSuccess');
     const steps      = form.querySelectorAll('.form-step-container');
