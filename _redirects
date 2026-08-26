@@ -1,0 +1,11 @@
+# Redirects do Cloudflare Pages — https://developers.cloudflare.com/pages/configuration/redirects/
+# Formato: [origem] [destino] [codigo]. Estaticos antes de dinamicos.
+# O redirect de apex para www NAO fica aqui: e uma Redirect Rule no nivel da
+# zona, que roda antes do Pages.
+
+# --- Consolidacao de canibalizacao -------------------------------------
+# post-o-que-e-meta-ads disputava as mesmas buscas que o guia-pilar em 5+
+# queries. O guia tem 1.463 impressoes contra 379, e posicao melhor
+# (22,7 contra 27,0). Consolida o sinal no pilar.
+/blog/post-o-que-e-meta-ads       /blog/post-guia-completo-meta-ads       301
+/blog/post-o-que-e-meta-ads.html  /blog/post-guia-completo-meta-ads       301
