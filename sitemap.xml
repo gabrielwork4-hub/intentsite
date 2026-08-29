@@ -2,26 +2,26 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://www.intentmarketing.com.br/sitemap-google-ads.xml</loc>
-    <lastmod>2026-06-01</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.intentmarketing.com.br/sitemap-institucional.xml</loc>
     <lastmod>2026-08-25</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://www.intentmarketing.com.br/sitemap-institucional.xml</loc>
+    <lastmod>2026-08-29</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://www.intentmarketing.com.br/sitemap-landing-pages.xml</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-08-28</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.intentmarketing.com.br/sitemap-meta-ads.xml</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-08-28</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.intentmarketing.com.br/sitemap-seo.xml</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-08-28</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.intentmarketing.com.br/sitemap-trafego-pago.xml</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-08-25</lastmod>
   </sitemap>
 </sitemapindex>
