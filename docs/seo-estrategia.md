@@ -25,11 +25,11 @@ Home (/)
 
 A silagem é feita por **links internos e por sitemap temático**, não por pastas de URL: todas as URLs de blog ficam em `/blog/post-*` (estrutura plana) e a separação lógica aparece nos 6 sitemaps. É intencional: URLs curtas, sem aninhamento e sem redirects para refatorar.
 
-**Regras em vigor (verificadas no código):**
+**Regras 1, 2, 4, 5 e 6 estão em vigor (verificadas no código); a 3 é meta com lacuna:**
 
 1. Todo spoke linka o **pilar do seu cluster** (0 exceções nos 4 clusters que têm pilar).
 2. Spokes linkam entre si dentro do cluster (ex.: SEO: 221 de 289 links de saída ficam no próprio cluster; Landing pages: 99 de 146; Meta Ads: 90 de 136).
-3. Spokes linkam a **página de serviço** relevante (bloco "Precisa de ajuda para executar?").
+3. **Meta, ainda não cumprida:** todo spoke deveria linkar a **página de serviço** do seu cluster (bloco "Precisa de ajuda para executar?"). Hoje só o cluster Landing pages cumpre (15/15). Os demais: SEO 6/26, Meta Ads 2/15, Tráfego pago 2/9, Google Ads 1/5 (medido em 2026-10-22, links no corpo, sem navegação/rodapé). Ver oportunidade #1 na seção 4.
 4. Links entre clusters existem onde há ponte temática real (ex.: `google-ads-vs-meta-ads`, `seo-ou-trafego-pago-2000`, `landing-page-para-advogados` ↔ `seo-advocacia`), sem linkagem cruzada em massa.
 5. `/blog/` linka as 74 páginas de blog; nenhuma página é órfã.
 6. URLs sempre em formato canônico (sem `.html`, sem barra final, exceto `/` e `/blog/`); 0 links usam `.html`.
@@ -84,7 +84,8 @@ Em ordem de esforço × efeito esperado. Validar volume de busca antes de produz
 
 | # | Oportunidade | Motivo |
 |---|---|---|
-| 1 | **Pilar e serviço de Google Ads** | O cluster tem 5 spokes e nenhum pilar próprio; a autoridade vai para o pilar de tráfego pago. Opção A: criar `post-guia-completo-google-ads`. Opção B: mover o cluster para dentro de Tráfego pago no sitemap. Decidir com dados do GSC |
+| 1 | **Bloco de CTA para o serviço nos spokes** | Só 26 dos 70 posts dos 5 clusters temáticos linkam o serviço (SEO 6/26, Meta Ads 2/15, Tráfego pago 2/9, Google Ads 1/5; Landing pages 15/15). É a maior lacuna do funil conteúdo → conversão. Replicar o bloco "Precisa de ajuda para executar?" já usado nos posts que o têm, começando pelos posts de intenção comercial (`quanto-custa-*`, `*-para-*`, `seo-on-page`, `roi-trafego-pago`) |
+| 1b | **Pilar e serviço de Google Ads** | O cluster tem 5 spokes e nenhum pilar próprio; a autoridade vai para o pilar de tráfego pago. Opção A: criar `post-guia-completo-google-ads`. Opção B: mover o cluster para dentro de Tráfego pago no sitemap. Decidir com dados do GSC |
 | 2 | **Home → pilares** | A home não linka nenhum dos 4 pilares; um bloco "Guias completos" distribui autoridade para os hubs |
 | 3 | **Reforçar spokes com 1–2 inlinks** | 12 páginas (lista em `seo-diagnostico.md`, B5) |
 | 4 | **Nichos faltantes entre clusters** | Há assimetria nicho × canal: Google Ads só tem advocacia; Landing page não tem e-commerce nem indústria; SEO não tem cursos; Meta Ads não tem advocacia. Escolher pelos nichos de maior LTV do portfólio |

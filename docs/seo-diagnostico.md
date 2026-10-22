@@ -6,12 +6,12 @@
 
 ## 1. Resumo executivo
 
-O SEO técnico está **saudável**. Nenhum problema crítico: nada bloqueia a indexação, nenhum canonical está errado, nenhum `noindex` indevido, nenhum link interno quebrado, nenhum loop de redirect. Os achados são de gravidade **média** (2) e **baixa** (6) e dizem respeito, sobretudo, à manutenção do sitemap e a pequenos desvios de higiene.
+O SEO técnico está **saudável**. Nenhum problema crítico: nada bloqueia a indexação, nenhum canonical está errado, nenhum `noindex` indevido, nenhum link interno quebrado, nenhum loop de redirect. Os achados são de gravidade **média** (3) e **baixa** (6) e dizem respeito, sobretudo, à manutenção do sitemap e a pequenos desvios de higiene.
 
 | Gravidade | Qtde | Itens |
 |---|---|---|
 | Crítico | 0 | — |
-| Médio | 2 | M1 (gerador do sitemap fora do repo), M2 (cadeia de 2 redirects no apex HTTP) |
+| Médio | 3 | M1 (gerador do sitemap fora do repo), M2 (cadeia de 2 redirects no apex HTTP), M3 (posts sem link para o serviço) |
 | Baixo | 6 | B1 a B6 |
 
 **Limite desta auditoria:** foi feita só com os arquivos do repositório e requisições HTTP públicas. **Não houve acesso ao Google Search Console**, então "indexação confirmada" aqui significa "nada no site impede ou confunde a indexação". A confirmação real (páginas indexadas, "Descobertas, mas não indexadas", cobertura do sitemap) precisa ser feita no GSC (seção 6).
@@ -126,6 +126,10 @@ O commit `1a4047e` diz que a geração do `lastmod` foi automatizada, mas o `.gi
 *Resolução:* na Redirect Rule da zona Cloudflare, redirecionar direto `http(s)://intentmarketing.com.br/*` → `https://www.intentmarketing.com.br/$1` (301) numa única regra. Mudança fora do repo, exige acesso ao painel Cloudflare.
 *Status: ação pendente de infra.* O repo não tem `vercel.json` nem `next.config`; o hosting é Cloudflare Pages e o `_redirects` não consegue tratar o apex (ele só vê requisições já recebidas no host `www`). A regra do apex vive na zona Cloudflare, onde nenhum arquivo versionado a alcança, então não há correção possível por PR.
 
+**M3 — A maioria dos posts não linka a página de serviço do cluster.**
+Links no corpo para o serviço de destino: Landing pages 15/15, SEO 6/26, Meta Ads 2/15, Tráfego pago 2/9, Google Ads 1/5 (26 de 70 posts, pilares incluídos). O conteúdo atrai busca, mas não encaminha à conversão; a autoridade dos posts também não chega às páginas de serviço.
+*Resolução:* adicionar o bloco de CTA "Precisa de ajuda para executar?" (já existente em posts como `post-seo-tecnico`) nos 44 posts sem link, priorizando os de intenção comercial. Esforço: médio, só edição de HTML. Lista completa se obtém re-rodando a auditoria (seção 7).
+
 ### Baixos
 
 | ID | Problema | Resolução sugerida |
@@ -148,7 +152,8 @@ Ordem recomendada (menor esforço e maior retorno de manutenção primeiro):
 3. **B1** — validar a indexação no GSC e preencher a linha de base da seção 5. *(desbloqueia métricas reais)*
 4. **B4** — reescrever as 5 descrições longas, começando pelas 3 páginas de serviço. *(CTR)*
 5. **B3** — remover o arquivo do post redirecionado.
-6. **B2/B5** — reforçar a linkagem interna (home → pilares; posts com 1–2 inlinks), junto com o roadmap de `seo-estrategia.md`.
+6. **M3** — adicionar link para o serviço nos posts (maior ganho de conversão; pode ser feito junto com B2/B5).
+7. **B2/B5** — reforçar a linkagem interna (home → pilares; posts com 1–2 inlinks), junto com o roadmap de `seo-estrategia.md`.
 
 O que **não** fazer: não mexer em canonical, robots.txt, hreflang ou meta robots (estão corretos); não alterar `lastmod` em commits mecânicos.
 
@@ -167,6 +172,7 @@ Não há linha de base de GSC/GA4 no repositório. Os alvos abaixo são de **sa�
 | Sitemap com `lastmod` defasado | 0 hoje | 0, garantido por gerador versionado | Gerador + CI |
 | Meta descriptions > 160 caracteres | 5 | 0 | Script de auditoria |
 | Páginas com ≤ 2 inlinks de corpo | 12 | 0 | Script de auditoria |
+| Posts com link para o serviço do cluster | 26 de 70 (Landing 15/15, SEO 6/26, Meta Ads 2/15, Tráfego 2/9, Google Ads 1/5) | 70 de 70 | Script de auditoria |
 | Core Web Vitals (LCP/INP/CLS) | _não medido_ | "Bom" em 75% das URLs (CrUX) | GSC > Core Web Vitals / PageSpeed |
 
 ## 6. Verificações pendentes que exigem acesso externo
