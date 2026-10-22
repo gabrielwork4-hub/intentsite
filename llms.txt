@@ -72,6 +72,7 @@ Idioma: português do Brasil (pt-BR). Contato: https://www.intentmarketing.com.b
 - [Quanto Custa uma Landing Page Profissional em 2026?](https://www.intentmarketing.com.br/blog/post-quanto-custa-landing-page): Descubra quanto custa uma landing page profissional no Brasil em 2026 — por faixa de investimento, o que está incluído e qual o ROI esperado para...
 - [Quanto Custa um Site Profissional em 2026? (Tabela de Preços)](https://www.intentmarketing.com.br/blog/post-quanto-custa-site): Quanto custa um site em 2026? Faixas de preço por tipo (institucional, landing page, e-commerce), o que muda o valor e os custos recorrentes.
 - [Como Aumentar a Taxa de Conversão da sua Landing Page](https://www.intentmarketing.com.br/blog/post-taxa-de-conversao-landing-page): Aprenda como aumentar a taxa de conversão da sua landing page com técnicas comprovadas: testes A/B, otimização de CTA, velocidade e UX para mais...
+- [Teste A/B em Landing Page: Passo a Passo e o Que Testar](https://www.intentmarketing.com.br/blog/post-teste-ab-landing-page): Como fazer teste A/B em landing page: hipótese, uma variável por vez, quanto tempo rodar, tráfego mínimo e o que testar primeiro para converter mais.
 
 ## SEO e visibilidade orgânica
 
@@ -102,6 +103,8 @@ Idioma: português do Brasil (pt-BR). Contato: https://www.intentmarketing.com.b
 - [SEO Técnico: Guia Completo para Não Técnicos](https://www.intentmarketing.com.br/blog/post-seo-tecnico): Entenda SEO técnico sem precisar ser programador: Core Web Vitals, HTTPS, sitemap, robots.txt, dados estruturados e velocidade — o que afeta seu...
 - [SEO White Hat vs Black Hat: Entenda as Diferenças e os Riscos](https://www.intentmarketing.com.br/blog/post-seo-white-hat-black-hat): Entenda a diferença entre SEO white hat e black hat, quais técnicas são seguras, quais podem penalizar seu site e como construir autoridade SEO de...
 - [Topic Clusters: Como Estruturar seu Blog em Autoridade](https://www.intentmarketing.com.br/blog/post-topic-clusters): Descubra como usar topic clusters e páginas pilar para organizar seu conteúdo, ganhar autoridade temática e dominar o Google de forma sustentável.
+- [Intenção de Busca: Tipos e Como Alinhar Sua Página](https://www.intentmarketing.com.br/blog/post-intencao-de-busca): Entenda os 4 tipos de intenção de busca, como ler a SERP para descobrir o que o Google espera e como adaptar o formato da página à consulta.
+- [Schema Markup: o Que É e Como Implementar em JSON-LD](https://www.intentmarketing.com.br/blog/post-schema-markup): Schema markup explicado: o que são dados estruturados, quais tipos usar, exemplo de JSON-LD e como validar no Teste de Rich Results.
 
 ## Escolha de agência e custos de marketing
 

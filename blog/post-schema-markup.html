@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-514YYBJ9YK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-514YYBJ9YK');
+    </script>
+    <title>Schema Markup: o Que É e Como Implementar em JSON-LD</title>
+    <meta name="description" content="Schema markup explicado: o que são dados estruturados, quais tipos usar, exemplo de JSON-LD e como validar no Teste de Rich Results.">
+    <meta name="keywords" content="schema markup, dados estruturados, json-ld, schema.org, rich results, seo técnico">
+    <meta name="author" content="Gabriel Barboza Ferreira Garcia Santos">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://www.intentmarketing.com.br/blog/post-schema-markup">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <meta property="og:title" content="Schema Markup: o Que É e Como Implementar em JSON-LD | Intent Marketing">
+    <meta property="og:description" content="Schema markup explicado: o que são dados estruturados, quais tipos usar, exemplo de JSON-LD e como validar no Teste de Rich Results.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.intentmarketing.com.br/blog/post-schema-markup">
+    <meta property="og:image" content="https://www.intentmarketing.com.br/blog/images/post7.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Intent Marketing">
+    <meta property="article:published_time" content="2026-10-22">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Schema Markup: o Que É e Como Implementar em JSON-LD">
+    <meta name="twitter:description" content="Schema markup explicado: o que são dados estruturados, quais tipos usar, exemplo de JSON-LD e como validar no Teste de Rich Results.">
+    <meta name="twitter:image" content="https://www.intentmarketing.com.br/blog/images/post7.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Schema Markup: o Que É, Para Que Serve e Como Implementar com JSON-LD","description":"Schema markup explicado: o que são dados estruturados, quais tipos usar, exemplo de JSON-LD e como validar no Teste de Rich Results.","image":"https://www.intentmarketing.com.br/blog/images/post7.webp","datePublished":"2026-10-22","dateModified":"2026-10-22","author":{"@type":"Person","name":"Gabriel Barboza Ferreira Garcia Santos","url":"https://www.linkedin.com/in/gabriel-barboza-growth/","sameAs":["https://www.linkedin.com/in/gabriel-barboza-growth/"]},"publisher":{"@type":"Organization","name":"Intent Marketing","url":"https://www.intentmarketing.com.br","logo":{"@type":"ImageObject","url":"https://www.intentmarketing.com.br/logo_dark.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.intentmarketing.com.br/blog/post-schema-markup"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é schema markup?","acceptedAnswer":{"@type":"Answer","text":"Schema markup, ou dados estruturados, é um código adicionado à página que descreve o conteúdo em um vocabulário padronizado (schema.org) para que buscadores entendam o que cada página é, quem a escreveu e a quem pertence."}},{"@type":"Question","name":"Schema markup ajuda no SEO?","acceptedAnswer":{"@type":"Answer","text":"Não há evidência de que o schema, sozinho, melhore a posição da página. Ele ajuda a tornar a página elegível a resultados enriquecidos e a deixar claras as informações sobre organização, autor e conteúdo, o que beneficia a leitura da página por buscadores e sistemas de IA."}},{"@type":"Question","name":"Qual formato de schema devo usar?","acceptedAnswer":{"@type":"Answer","text":"O JSON-LD, recomendado pelo Google. Ele fica em um bloco de script separado do HTML visível, o que facilita escrever, revisar e manter, ao contrário de Microdata e RDFa, que se misturam com as tags da página."}},{"@type":"Question","name":"Como testar se o schema está correto?","acceptedAnswer":{"@type":"Answer","text":"Use o Teste de Rich Results do Google para verificar a elegibilidade a resultados enriquecidos e o Schema Markup Validator (validator.schema.org) para conferir o vocabulário. Depois de publicar, acompanhe os relatórios do Search Console."}},{"@type":"Question","name":"Preciso de plugin para usar schema markup?","acceptedAnswer":{"@type":"Answer","text":"Em WordPress, plugins de SEO geram o JSON-LD automaticamente. Em sites de HTML estático, basta colar o bloco de script na página. Nos dois casos, valide o resultado e confira se os dados batem com o conteúdo visível."}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.intentmarketing.com.br"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.intentmarketing.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Schema Markup: o Que É, Para Que Serve e Como Implementar com JSON-LD","item":"https://www.intentmarketing.com.br/blog/post-schema-markup"}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.intentmarketing.com.br/#organization", "name": "Intent Marketing", "url": "https://www.intentmarketing.com.br", "logo": {"@type": "ImageObject", "url": "https://www.intentmarketing.com.br/logo_dark.png"}, "description": "Agência brasileira de marketing digital especializada em SEO, tráfego pago (Google Ads e Meta Ads) e landing pages de alta conversão para empresas e profissionais liberais.", "foundingDate": "2023", "areaServed": {"@type": "Country", "name": "Brasil"}, "knowsAbout": ["SEO (Search Engine Optimization)", "Google Ads", "Meta Ads", "Tráfego Pago", "Landing Pages", "Topic Cluster", "Link Building", "Marketing Digital", "Geração de Leads", "Taxa de Conversão", "Gestão de Tráfego", "Google Search Console", "Ahrefs", "Pixel do Facebook", "Remarketing", "SEO Local", "Google Meu Negócio", "Copywriting para Conversão", "Core Web Vitals", "Estratégia de Conteúdo"], "sameAs": ["https://www.instagram.com/intent__marketing", "https://share.google/WsPvqyOSzcIV0vkmx"], "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "availableLanguage": "Portuguese", "areaServed": "BR"}}</script>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img width="319" height="123" src="../logo_dark.png" alt="Intent Marketing" class="logo-img">
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/#servicos" class="nav-link">Serviços</a>
+                <a href="/#resultados" class="nav-link">Resultados</a>
+                <a href="/#portfolio" class="nav-link">Cases</a>
+                <a href="/#sobre" class="nav-link">Sobre</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/#contato" class="nav-link">Contato</a>
+                <a href="/#contato" class="nav-cta">→ Agendar diagnóstico</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="breadcrumb-bar"><div class="container"><a href="/">Home</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; <span>Schema Markup: o Que É, Para Que Serve e Como Implementar com JSON-LD</span></div></div>
+    <section class="post-hero">
+      <div class="container post-hero-inner">
+        <div class="post-meta">
+          <span class="post-category">SEO</span>
+          <span class="post-date">22 de outubro de 2026</span>
+          <span class="post-read-time">7 min de leitura</span>
+        </div>
+        <h1>Schema Markup: o Que É, Para Que Serve e Como Implementar com JSON-LD</h1>
+        <p class="post-lead">O <strong>schema markup</strong> descreve o conteúdo da página em um vocabulário que os buscadores entendem. Não é um atalho de ranking, mas é a forma de dizer às máquinas quem é a empresa, quem escreveu o texto e o que cada página é.</p>
+      </div>
+    </section>
+    <div class="post-featured-image"><div class="container"><img src="images/post7.webp" width="800" height="500" alt="Schema Markup: o Que É, Para Que Serve e Como Implementar com JSON-LD" loading="eager"></div></div>
+    <article class="post-body">
+      <div class="container post-layout">
+        <div class="post-content">
+          <h2>O Que É Schema Markup</h2>
+<p>Schema markup, ou dados estruturados, é um código adicionado à página que descreve o conteúdo com um vocabulário padronizado, o <strong>schema.org</strong>. Em vez de deixar o buscador deduzir, o código afirma: esta página é um artigo, escrito por esta pessoa, publicado nesta data, dentro deste site. O leitor não vê nada; o robô lê.</p>
+<h2>Schema Melhora o Ranking?</h2>
+<p>Não há evidência de que o schema, sozinho, suba a posição de uma página. O ganho é de outra natureza: a marcação torna a página elegível a resultados enriquecidos (<em>rich results</em>) quando o Google os oferece para aquele tipo de conteúdo, e deixa explícitas informações que de outro modo seriam inferidas, como a organização por trás do site e o autor do texto. Esse papel de tornar a página legível para máquinas também interessa à <a href="post-geo">otimização para buscas com IA (GEO)</a>.</p>
+<h2>JSON-LD, Microdata e RDFa</h2>
+<p>O schema pode ser escrito em três formatos. O <strong>JSON-LD</strong> é o recomendado pelo Google: fica em um bloco <code>script</code> separado e não se mistura com o HTML visível, o que facilita escrever, revisar e manter. Microdata e RDFa são inseridos dentro das tags da página, e qualquer mudança de layout pode quebrá-los. Para sites novos, use JSON-LD.</p>
+<h2>Tipos de Schema que a Maioria dos Sites Usa</h2>
+<h3>Organization</h3>
+<p>Nome, logo, site, redes sociais e área de atuação da empresa. É a base para o buscador reconhecer a marca como uma entidade e costuma ficar na página inicial.</p>
+<h3>Article</h3>
+<p>Para posts de blog: título, imagem, autor, data de publicação e data de modificação. Mantenha a data de modificação verdadeira, atualizada apenas quando o conteúdo mudou de fato.</p>
+<h3>BreadcrumbList</h3>
+<p>Descreve a trilha de navegação (Home, Blog, página atual). Ajuda o buscador a entender onde a página está na estrutura do site, o que reforça a lógica de <a href="post-topic-clusters">topic clusters</a>.</p>
+<h3>LocalBusiness</h3>
+<p>Para negócios com endereço físico ou área de atendimento: endereço, telefone, horário e coordenadas. Complementa o <a href="post-google-meu-negocio">Google Meu Negócio</a> e o trabalho de <a href="post-seo-local">SEO local</a>.</p>
+<h3>FAQPage</h3>
+<p>Marca perguntas e respostas que estão visíveis na página. Atenção ao estado atual: desde agosto de 2023 o Google exibe o resultado enriquecido de perguntas frequentes apenas para sites governamentais e de saúde bem conhecidos. A marcação continua válida e descreve o conteúdo, mas não conte com o rich result em um site de outro setor.</p>
+<h3>Product</h3>
+<p>Para e-commerce: nome, preço, disponibilidade e avaliações do produto. É o tipo com maior impacto visual nos resultados de lojas, desde que os dados da marcação coincidam com os da página. Veja o contexto em <a href="post-seo-ecommerce">SEO para e-commerce</a>.</p>
+<h2>Exemplo de JSON-LD</h2>
+<p>Este é um modelo mínimo de <code>Article</code>. Troque os valores de exemplo pelos dados reais da sua página:</p>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Título do artigo",
+  "image": "https://www.exemplo.com.br/imagem.webp",
+  "datePublished": "2026-01-15",
+  "dateModified": "2026-02-10",
+  "author": {
+    "@type": "Person",
+    "name": "Nome do Autor"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nome da Empresa",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.exemplo.com.br/logo.png"
+    }
+  }
+}
+&lt;/script&gt;</code></pre>
+<h2>Como Implementar em 5 Passos</h2>
+<ol>
+<li><strong>Escolha o tipo certo</strong> para cada modelo de página: Article para posts, Product para produtos, LocalBusiness para a página do negócio local.</li>
+<li><strong>Escreva o JSON-LD</strong> à mão ou com um gerador, usando só informações que aparecem na página.</li>
+<li><strong>Cole o bloco</strong> no <code>head</code> ou no <code>body</code> da página. Em WordPress, um plugin faz isso; em HTML estático, é só colar o bloco <code>script</code>.</li>
+<li><strong>Valide</strong> antes de publicar (próxima seção).</li>
+<li><strong>Monitore</strong> no Search Console, onde erros de marcação aparecem nos relatórios de melhorias.</li>
+</ol>
+<h2>Como Validar a Marcação</h2>
+<p>Use duas ferramentas gratuitas. O <strong>Teste de Rich Results</strong>, do Google, mostra se a página é elegível a resultados enriquecidos e aponta erros. O <strong>Schema Markup Validator</strong> (validator.schema.org) confere se a marcação segue o vocabulário, independentemente de o Google exibir o resultado. Depois de publicar, acompanhe os relatórios do <a href="post-google-search-console">Google Search Console</a>.</p>
+<h2>Erros Comuns</h2>
+<ul>
+<li><strong>Marcar o que não aparece na página.</strong> A marcação deve refletir o conteúdo visível; dados que só existem no código violam as diretrizes do Google.</li>
+<li><strong>Dados divergentes.</strong> Preço, data ou autor diferentes entre a marcação e a página geram erro e perdem a confiança do buscador.</li>
+<li><strong>Marcar FAQ para ganhar rich result</strong> em site que não é elegível. O resultado enriquecido não aparece.</li>
+<li><strong>Copiar um bloco pronto</strong> sem trocar nome, URL e logo de outra empresa.</li>
+<li><strong>Esquecer a manutenção.</strong> Mudou o preço, o endereço ou o autor? Atualize o JSON-LD junto com a página.</li>
+</ul>
+<h2>Schema e Buscas por IA</h2>
+<p>Mecanismos de busca com IA leem a página como texto, e a marcação ajuda a deixar claro quem é a fonte e o que cada trecho representa. Não existe garantia de que o schema leve a citações em respostas de IA; ele é uma camada de clareza, somada a conteúdo útil e a uma estrutura de site coerente. Para o quadro mais amplo, leia sobre <a href="post-ia-generativa-seo">IA generativa e SEO</a> e o guia de <a href="post-seo-tecnico">SEO técnico</a>.</p>
+          <div class="geo-box" itemscope itemtype="https://schema.org/Organization">
+            <h3>Sobre a Intent Marketing</h3>
+            <p itemprop="description">Este blog carrega JSON-LD de Article, BreadcrumbList e Organization em cada post, e FAQPage nos posts com perguntas frequentes. A consultoria de SEO da Intent Marketing inclui a revisão técnica dessa marcação.</p>
+            <p><a href="https://www.intentmarketing.com.br" itemprop="url">intentmarketing.com.br</a> · <span itemprop="name">Intent Marketing</span> · São Paulo, Brasil</p>
+          </div>
+          <div class="related-posts-inline"><strong>Leia também:</strong> <a href="post-seo-tecnico">SEO técnico</a> | <a href="post-geo">GEO</a> | <a href="post-ia-generativa-seo">IA generativa e SEO</a> | <a href="post-seo-local">SEO local</a> | <a href="post-google-search-console">Google Search Console</a></div>
+          <div class="svc-related"><strong>Precisa de ajuda para executar?</strong> Conheça a <a href="/consultoria-seo">consultoria de SEO da Intent Marketing</a> — auditoria técnica, arquitetura de conteúdo em topic cluster e relatório mensal.</div>
+          <section class="faq-section">
+<h2>Perguntas Frequentes sobre Schema Markup</h2>
+            <div class="faq-item"><h3>O que é schema markup?</h3><p>Schema markup, ou dados estruturados, é um código adicionado à página que descreve o conteúdo em um vocabulário padronizado (schema.org) para que buscadores entendam o que cada página é, quem a escreveu e a quem pertence.</p></div>
+<div class="faq-item"><h3>Schema markup ajuda no SEO?</h3><p>Não há evidência de que o schema, sozinho, melhore a posição da página. Ele ajuda a tornar a página elegível a resultados enriquecidos e a deixar claras as informações sobre organização, autor e conteúdo, o que beneficia a leitura da página por buscadores e sistemas de IA.</p></div>
+<div class="faq-item"><h3>Qual formato de schema devo usar?</h3><p>O JSON-LD, recomendado pelo Google. Ele fica em um bloco de script separado do HTML visível, o que facilita escrever, revisar e manter, ao contrário de Microdata e RDFa, que se misturam com as tags da página.</p></div>
+<div class="faq-item"><h3>Como testar se o schema está correto?</h3><p>Use o Teste de Rich Results do Google para verificar a elegibilidade a resultados enriquecidos e o Schema Markup Validator (validator.schema.org) para conferir o vocabulário. Depois de publicar, acompanhe os relatórios do Search Console.</p></div>
+<div class="faq-item"><h3>Preciso de plugin para usar schema markup?</h3><p>Em WordPress, plugins de SEO geram o JSON-LD automaticamente. Em sites de HTML estático, basta colar o bloco de script na página. Nos dois casos, valide o resultado e confira se os dados batem com o conteúdo visível.</p></div>
+          </section>
+        </div>
+        <aside class="post-sidebar">
+          <div class="sidebar-widget">
+            <h4>Diagnóstico Gratuito de SEO</h4>
+            <p>Descubra o que está impedindo seu site de aparecer no Google e o que fazer para mudar isso.</p>
+            <a href="https://wa.me/5511912809347?text=Ol%C3%A1!%20Vim%20pelo%20blog%20da%20Intent%20Marketing%20e%20quero%20um%20diagn%C3%B3stico%20gratuito." class="btn btn-primary btn-sm" target="_blank" rel="noopener">Quero meu diagnóstico</a>
+          </div>
+          <div class="sidebar-widget">
+            <h4>Cluster SEO</h4>
+            <ul>
+              <li><a href="/consultoria-seo"><strong>Consultoria de SEO</strong> (serviço)</a></li>
+              <li><a href="post-guia-completo-seo">Guia Completo de SEO</a></li>
+              <li><a href="post-seo-tecnico">SEO Técnico</a></li>
+              <li><a href="post-geo">GEO: Otimização para IA</a></li>
+              <li><a href="post-google-search-console">Google Search Console</a></li>
+              <li><a href="post-intencao-de-busca">Intenção de Busca</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    <section class="author-box"><div class="container"><div class="author-box-inner"><div class="author-box-avatar" aria-hidden="true">GB</div><div class="author-box-info"><span class="author-box-label">Escrito por</span><a class="author-box-name" href="https://www.linkedin.com/in/gabriel-barboza-growth/" target="_blank" rel="author noopener">Gabriel Barboza</a><p class="author-box-bio">Especialista em Growth e Marketing Digital, fundador da Intent Marketing. Atua com SEO e tr&#225;fego pago para gerar crescimento previs&#237;vel e mensur&#225;vel para empresas.</p><a class="author-box-cta" href="https://www.linkedin.com/in/gabriel-barboza-growth/" target="_blank" rel="noopener">Conectar no LinkedIn &#8594;</a></div></div></div></section>
+    </article>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="nav-logo">
+                        <img width="319" height="123" src="../logo_dark.png" alt="Intent Marketing" class="logo-img" loading="lazy">
+                    </a>
+                    <p>Estratégia, criatividade e dados a serviço do crescimento do seu negócio digital.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/intent__marketing" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://share.google/WsPvqyOSzcIV0vkmx" target="_blank" rel="noopener noreferrer" aria-label="Google Meu Negócio" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 11v2.4h5.6c-.24 1.46-1.68 4.28-5.6 4.28-3.37 0-6.12-2.79-6.12-6.22S8.63 5.24 12 5.24c1.92 0 3.2.82 3.94 1.52l2.68-2.58C16.92 2.6 14.66 1.6 12 1.6 6.84 1.6 2.68 5.76 2.68 11.46S6.84 21.32 12 21.32c5.96 0 9.9-4.18 9.9-10.08 0-.68-.07-1.2-.16-1.72H12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5>Serviços</h5>
+                        <a href="/#servicos">Landing Pages</a>
+                        <a href="/#servicos">Sites Comerciais</a>
+                        <a href="/#servicos">Google Ads</a>
+                        <a href="/#servicos">Meta Ads</a>
+                        <a href="/#servicos">SEO</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Empresa</h5>
+                        <a href="/#sobre">Sobre nós</a>
+                        <a href="/#portfolio">Portfólio</a>
+                        <a href="/#contato">Contato</a>
+                        <a href="../privacidade">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Intent Marketing. Todos os direitos reservados.</p>
+                <p class="footer-made">Feito com 🧡 pela Intent Marketing</p>
+            </div>
+        </div>
+    </footer>
+<a href="https://wa.me/5511912809347?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Intent%20Marketing%20e%20quero%20um%20diagn%C3%B3stico." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+    <script src="blog-script.js"></script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "xbl0njdrvl");
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-514YYBJ9YK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-514YYBJ9YK');
+    </script>
+    <title>Teste A/B em Landing Page: Passo a Passo e o Que Testar</title>
+    <meta name="description" content="Como fazer teste A/B em landing page: hipótese, uma variável por vez, quanto tempo rodar, tráfego mínimo e o que testar primeiro para converter mais.">
+    <meta name="keywords" content="teste ab landing page, teste a/b, como fazer teste ab, otimização de conversão, taxa de conversão, cro">
+    <meta name="author" content="Gabriel Barboza Ferreira Garcia Santos">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://www.intentmarketing.com.br/blog/post-teste-ab-landing-page">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <meta property="og:title" content="Teste A/B em Landing Page: Passo a Passo e o Que Testar | Intent Marketing">
+    <meta property="og:description" content="Como fazer teste A/B em landing page: hipótese, uma variável por vez, quanto tempo rodar, tráfego mínimo e o que testar primeiro para converter mais.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.intentmarketing.com.br/blog/post-teste-ab-landing-page">
+    <meta property="og:image" content="https://www.intentmarketing.com.br/blog/images/post34.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Intent Marketing">
+    <meta property="article:published_time" content="2026-10-22">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Teste A/B em Landing Page: Passo a Passo e o Que Testar">
+    <meta name="twitter:description" content="Como fazer teste A/B em landing page: hipótese, uma variável por vez, quanto tempo rodar, tráfego mínimo e o que testar primeiro para converter mais.">
+    <meta name="twitter:image" content="https://www.intentmarketing.com.br/blog/images/post34.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Teste A/B em Landing Page: Como Fazer, o Que Testar e Quando Vale a Pena","description":"Como fazer teste A/B em landing page: hipótese, uma variável por vez, quanto tempo rodar, tráfego mínimo e o que testar primeiro para converter mais.","image":"https://www.intentmarketing.com.br/blog/images/post34.webp","datePublished":"2026-10-22","dateModified":"2026-10-22","author":{"@type":"Person","name":"Gabriel Barboza Ferreira Garcia Santos","url":"https://www.linkedin.com/in/gabriel-barboza-growth/","sameAs":["https://www.linkedin.com/in/gabriel-barboza-growth/"]},"publisher":{"@type":"Organization","name":"Intent Marketing","url":"https://www.intentmarketing.com.br","logo":{"@type":"ImageObject","url":"https://www.intentmarketing.com.br/logo_dark.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.intentmarketing.com.br/blog/post-teste-ab-landing-page"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é teste A/B em landing page?","acceptedAnswer":{"@type":"Answer","text":"É a comparação de duas versões da mesma página exibidas ao mesmo tempo para públicos equivalentes. O tráfego é dividido entre elas e a taxa de conversão de cada uma mostra qual versão funciona melhor."}},{"@type":"Question","name":"Quanto tempo deve durar um teste A/B?","acceptedAnswer":{"@type":"Answer","text":"No mínimo uma semana completa, para cobrir dias úteis e fim de semana, e até atingir o tamanho de amostra calculado antes do teste. Encerrar no primeiro dia em que uma versão está na frente leva a conclusões erradas."}},{"@type":"Question","name":"Quanto tráfego preciso para fazer teste A/B?","acceptedAnswer":{"@type":"Answer","text":"Depende da taxa de conversão atual e da melhoria que você espera detectar; uma calculadora de tamanho de amostra dá o número. Se a página gera poucas conversões por mês, o teste demora demais e vale corrigir primeiro os problemas óbvios."}},{"@type":"Question","name":"Posso testar duas coisas ao mesmo tempo?","acceptedAnswer":{"@type":"Answer","text":"Mudar dois elementos na mesma variante impede saber qual causou o efeito. O teste multivariado, que combina várias mudanças, existe, mas exige muito mais tráfego. Para a maioria das landing pages, teste uma variável por vez."}},{"@type":"Question","name":"Qual ferramenta usar para teste A/B?","acceptedAnswer":{"@type":"Answer","text":"VWO, Optimizely, AB Tasty e RD Station são opções. Também é possível dividir o tráfego pago entre duas URLs com experimentos do Google Ads ou o teste A/B do Meta Ads. O Google Optimize foi encerrado em 2023."}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.intentmarketing.com.br"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.intentmarketing.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Teste A/B em Landing Page: Como Fazer, o Que Testar e Quando Vale a Pena","item":"https://www.intentmarketing.com.br/blog/post-teste-ab-landing-page"}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.intentmarketing.com.br/#organization", "name": "Intent Marketing", "url": "https://www.intentmarketing.com.br", "logo": {"@type": "ImageObject", "url": "https://www.intentmarketing.com.br/logo_dark.png"}, "description": "Agência brasileira de marketing digital especializada em SEO, tráfego pago (Google Ads e Meta Ads) e landing pages de alta conversão para empresas e profissionais liberais.", "foundingDate": "2023", "areaServed": {"@type": "Country", "name": "Brasil"}, "knowsAbout": ["SEO (Search Engine Optimization)", "Google Ads", "Meta Ads", "Tráfego Pago", "Landing Pages", "Topic Cluster", "Link Building", "Marketing Digital", "Geração de Leads", "Taxa de Conversão", "Gestão de Tráfego", "Google Search Console", "Ahrefs", "Pixel do Facebook", "Remarketing", "SEO Local", "Google Meu Negócio", "Copywriting para Conversão", "Core Web Vitals", "Estratégia de Conteúdo"], "sameAs": ["https://www.instagram.com/intent__marketing", "https://share.google/WsPvqyOSzcIV0vkmx"], "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "availableLanguage": "Portuguese", "areaServed": "BR"}}</script>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img width="319" height="123" src="../logo_dark.png" alt="Intent Marketing" class="logo-img">
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/#servicos" class="nav-link">Serviços</a>
+                <a href="/#resultados" class="nav-link">Resultados</a>
+                <a href="/#portfolio" class="nav-link">Cases</a>
+                <a href="/#sobre" class="nav-link">Sobre</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/#contato" class="nav-link">Contato</a>
+                <a href="/#contato" class="nav-cta">→ Agendar diagnóstico</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="breadcrumb-bar"><div class="container"><a href="/">Home</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; <span>Teste A/B em Landing Page: Como Fazer, o Que Testar e Quando Vale a Pena</span></div></div>
+    <section class="post-hero">
+      <div class="container post-hero-inner">
+        <div class="post-meta">
+          <span class="post-category">Landing Pages</span>
+          <span class="post-date">22 de outubro de 2026</span>
+          <span class="post-read-time">7 min de leitura</span>
+        </div>
+        <h1>Teste A/B em Landing Page: Como Fazer, o Que Testar e Quando Vale a Pena</h1>
+        <p class="post-lead">O <strong>teste A/B</strong> compara duas versões da mesma landing page com tráfego real e mostra qual converte mais. Funciona quando há volume, uma hipótese clara e disciplina para mudar uma coisa de cada vez.</p>
+      </div>
+    </section>
+    <div class="post-featured-image"><div class="container"><img src="images/post34.webp" width="1200" height="630" alt="Teste A/B em Landing Page: Como Fazer, o Que Testar e Quando Vale a Pena" loading="eager"></div></div>
+    <article class="post-body">
+      <div class="container post-layout">
+        <div class="post-content">
+          <h2>O Que É Teste A/B</h2>
+<p>No teste A/B, duas versões de uma página rodam ao mesmo tempo e o tráfego é dividido entre elas. A versão A é o controle, a que já existe. A versão B muda um elemento. Depois de tráfego suficiente, a comparação das <a href="post-taxa-de-conversao-landing-page">taxas de conversão</a> mostra se a mudança ajudou, atrapalhou ou não fez diferença.</p>
+<p>A vantagem sobre "achar" é que o teste usa o comportamento real do seu público, não a opinião de quem desenhou a página.</p>
+<h2>Quando Vale a Pena Testar</h2>
+<p>Teste A/B precisa de volume. Com poucas conversões por versão, a diferença entre A e B é ruído, e é fácil declarar vencedora uma versão que só teve sorte. Como regra prática, se a página gera poucas dezenas de conversões por mês, o teste levaria meses para concluir. Nesse caso, vale mais corrigir os problemas evidentes primeiro: promessa confusa, formulário longo demais, página lenta, ausência de prova social. Os <a href="post-elementos-landing-page-alta-conversao">elementos de uma landing page de alta conversão</a> servem como lista de checagem.</p>
+<p>Antes de começar, use uma calculadora de tamanho de amostra para estimar quantos visitantes por versão você precisa para detectar a melhoria que espera.</p>
+<h2>Passo a Passo para Fazer um Teste A/B</h2>
+<h3>1. Escreva a hipótese</h3>
+<p>Use o formato: "Se mudarmos X para Y, a taxa de conversão sobe, porque Z". A parte do "porque" obriga a basear o teste em um dado, como um mapa de calor, uma gravação de sessão ou uma objeção que o time comercial ouve com frequência.</p>
+<h3>2. Mude uma variável por vez</h3>
+<p>Se você trocar o título e a cor do botão ao mesmo tempo e a conversão subir, não saberá qual mudança funcionou. Teste uma coisa, aprenda, e só depois teste a próxima.</p>
+<h3>3. Divida o tráfego de forma igual e aleatória</h3>
+<p>Metade dos visitantes vê A, metade vê B, vindos da mesma fonte e no mesmo período. Comparar uma versão no mês passado com outra neste mês não é teste A/B, porque sazonalidade e mudanças de campanha contaminam o resultado.</p>
+<h3>4. Defina a duração antes de começar</h3>
+<p>Deixe o teste rodar por pelo menos uma semana completa, para cobrir os dias úteis e o fim de semana, e até atingir o tamanho de amostra que você calculou. Parar no primeiro dia em que uma versão aparece na frente é o erro mais comum.</p>
+<h3>5. Leia o resultado e registre o aprendizado</h3>
+<p>Considere a diferença significativa quando a ferramenta indicar confiança estatística adequada, usualmente 95%. Se não houve vencedora, isso também é informação: a variável testada não era o gargalo. Registre a hipótese, o resultado e o que aprendeu para orientar o próximo teste.</p>
+<h2>O Que Testar Primeiro</h2>
+<p>Comece pelo que está mais perto da decisão e é mais visível:</p>
+<ul>
+<li><strong>Título e promessa principal:</strong> é o que decide se a pessoa continua lendo. Veja técnicas em <a href="post-copywriting-landing-page">copywriting para landing page</a>.</li>
+<li><strong>Oferta:</strong> o que a pessoa recebe e em que condição (material, diagnóstico, prazo).</li>
+<li><strong>Chamada para ação:</strong> texto do botão e posição na página.</li>
+<li><strong>Formulário:</strong> número de campos e quais perguntas são realmente necessárias.</li>
+<li><strong>Prova social:</strong> depoimentos, números e logos de clientes, e onde aparecem.</li>
+<li><strong>Imagem principal:</strong> a que está na primeira dobra.</li>
+</ul>
+<h2>Ferramentas para Teste A/B</h2>
+<ul>
+<li><strong>Ferramentas de teste:</strong> VWO, Optimizely e AB Tasty dividem o tráfego e calculam a significância. O RD Station também oferece teste A/B em landing pages. O Google Optimize foi encerrado em setembro de 2023.</li>
+<li><strong>Plataformas de anúncio:</strong> o Google Ads tem experimentos de campanha e o Meta Ads tem teste A/B no Gerenciador de Anúncios. Eles dividem o tráfego pago entre versões de campanha ou criativo, e podem apontar cada versão para uma URL diferente.</li>
+</ul>
+<h2>Como Testar em uma Página HTML Estática</h2>
+<p>Páginas estáticas não têm um editor visual que alterne versões, mas dá para testar do mesmo jeito: publique a variante em outra URL, como a página original e a mesma com a alteração, e distribua o tráfego pago entre as duas. Para a comparação ser justa, os dois grupos precisam ter o mesmo texto de anúncio, o mesmo público e o mesmo orçamento, e a conversão de cada URL deve ser medida separadamente, como explicado em <a href="post-roi-trafego-pago">como medir o ROI do tráfego pago</a>.</p>
+<h2>Erros Comuns em Teste A/B</h2>
+<ul>
+<li>Encerrar o teste cedo porque uma versão abriu vantagem nos primeiros dias.</li>
+<li>Mudar vários elementos de uma vez.</li>
+<li>Comparar períodos diferentes em vez de rodar as versões em paralelo.</li>
+<li>Testar sem volume suficiente de conversões.</li>
+<li>Não registrar os resultados, e repetir a mesma ideia meses depois.</li>
+</ul>
+<p>Para o quadro completo da criação e otimização de páginas, veja o <a href="post-guia-completo-landing-page">guia completo de landing page</a> e o passo a passo de <a href="post-como-criar-landing-page">como criar uma landing page</a>.</p>
+          <div class="geo-box" itemscope itemtype="https://schema.org/Organization">
+            <h3>Sobre a Intent Marketing</h3>
+            <p itemprop="description">A Intent Marketing entrega landing pages em HTML estático com rastreamento de conversão e teste A/B, como descrito na página do serviço de criação de landing page.</p>
+            <p><a href="https://www.intentmarketing.com.br" itemprop="url">intentmarketing.com.br</a> · <span itemprop="name">Intent Marketing</span> · São Paulo, Brasil</p>
+          </div>
+          <div class="related-posts-inline"><strong>Leia também:</strong> <a href="post-taxa-de-conversao-landing-page">taxa de conversão</a> | <a href="post-elementos-landing-page-alta-conversao">elementos de alta conversão</a> | <a href="post-copywriting-landing-page">copywriting</a> | <a href="post-como-criar-landing-page">como criar uma landing page</a> | <a href="post-roi-trafego-pago">ROI do tráfego pago</a></div>
+          <div class="svc-related"><strong>Quer que a gente faça?</strong> Conheça a <a href="/criacao-de-landing-page">criação de landing page da Intent Marketing</a> — copy, design sob medida e rastreamento de conversão, com entrega em 10 a 15 dias úteis.</div>
+          <section class="faq-section">
+<h2>Perguntas Frequentes sobre Teste A/B em Landing Page</h2>
+            <div class="faq-item"><h3>O que é teste A/B em landing page?</h3><p>É a comparação de duas versões da mesma página exibidas ao mesmo tempo para públicos equivalentes. O tráfego é dividido entre elas e a taxa de conversão de cada uma mostra qual versão funciona melhor.</p></div>
+<div class="faq-item"><h3>Quanto tempo deve durar um teste A/B?</h3><p>No mínimo uma semana completa, para cobrir dias úteis e fim de semana, e até atingir o tamanho de amostra calculado antes do teste. Encerrar no primeiro dia em que uma versão está na frente leva a conclusões erradas.</p></div>
+<div class="faq-item"><h3>Quanto tráfego preciso para fazer teste A/B?</h3><p>Depende da taxa de conversão atual e da melhoria que você espera detectar; uma calculadora de tamanho de amostra dá o número. Se a página gera poucas conversões por mês, o teste demora demais e vale corrigir primeiro os problemas óbvios.</p></div>
+<div class="faq-item"><h3>Posso testar duas coisas ao mesmo tempo?</h3><p>Mudar dois elementos na mesma variante impede saber qual causou o efeito. O teste multivariado, que combina várias mudanças, existe, mas exige muito mais tráfego. Para a maioria das landing pages, teste uma variável por vez.</p></div>
+<div class="faq-item"><h3>Qual ferramenta usar para teste A/B?</h3><p>VWO, Optimizely, AB Tasty e RD Station são opções. Também é possível dividir o tráfego pago entre duas URLs com experimentos do Google Ads ou o teste A/B do Meta Ads. O Google Optimize foi encerrado em 2023.</p></div>
+          </section>
+        </div>
+        <aside class="post-sidebar">
+          <div class="sidebar-widget">
+            <h4>Diagnóstico Gratuito</h4>
+            <p>Descubra o que está travando as conversões da sua landing page e o que fazer para mudar isso.</p>
+            <a href="https://wa.me/5511912809347?text=Ol%C3%A1!%20Vim%20pelo%20blog%20da%20Intent%20Marketing%20e%20quero%20um%20diagn%C3%B3stico%20gratuito." class="btn btn-primary btn-sm" target="_blank" rel="noopener">Quero meu diagnóstico</a>
+          </div>
+          <div class="sidebar-widget">
+            <h4>Cluster Landing Pages</h4>
+            <ul>
+              <li><a href="/criacao-de-landing-page"><strong>Criação de landing page</strong> (serviço)</a></li>
+              <li><a href="post-guia-completo-landing-page">Guia Completo de Landing Page</a></li>
+              <li><a href="post-como-criar-landing-page">Como Criar uma Landing Page</a></li>
+              <li><a href="post-taxa-de-conversao-landing-page">Taxa de Conversão</a></li>
+              <li><a href="post-elementos-landing-page-alta-conversao">Elementos de Alta Conversão</a></li>
+              <li><a href="post-copywriting-landing-page">Copywriting para Landing Page</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    <section class="author-box"><div class="container"><div class="author-box-inner"><div class="author-box-avatar" aria-hidden="true">GB</div><div class="author-box-info"><span class="author-box-label">Escrito por</span><a class="author-box-name" href="https://www.linkedin.com/in/gabriel-barboza-growth/" target="_blank" rel="author noopener">Gabriel Barboza</a><p class="author-box-bio">Especialista em Growth e Marketing Digital, fundador da Intent Marketing. Atua com SEO e tr&#225;fego pago para gerar crescimento previs&#237;vel e mensur&#225;vel para empresas.</p><a class="author-box-cta" href="https://www.linkedin.com/in/gabriel-barboza-growth/" target="_blank" rel="noopener">Conectar no LinkedIn &#8594;</a></div></div></div></section>
+    </article>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="nav-logo">
+                        <img width="319" height="123" src="../logo_dark.png" alt="Intent Marketing" class="logo-img" loading="lazy">
+                    </a>
+                    <p>Estratégia, criatividade e dados a serviço do crescimento do seu negócio digital.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/intent__marketing" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://share.google/WsPvqyOSzcIV0vkmx" target="_blank" rel="noopener noreferrer" aria-label="Google Meu Negócio" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 11v2.4h5.6c-.24 1.46-1.68 4.28-5.6 4.28-3.37 0-6.12-2.79-6.12-6.22S8.63 5.24 12 5.24c1.92 0 3.2.82 3.94 1.52l2.68-2.58C16.92 2.6 14.66 1.6 12 1.6 6.84 1.6 2.68 5.76 2.68 11.46S6.84 21.32 12 21.32c5.96 0 9.9-4.18 9.9-10.08 0-.68-.07-1.2-.16-1.72H12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5>Serviços</h5>
+                        <a href="/#servicos">Landing Pages</a>
+                        <a href="/#servicos">Sites Comerciais</a>
+                        <a href="/#servicos">Google Ads</a>
+                        <a href="/#servicos">Meta Ads</a>
+                        <a href="/#servicos">SEO</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Empresa</h5>
+                        <a href="/#sobre">Sobre nós</a>
+                        <a href="/#portfolio">Portfólio</a>
+                        <a href="/#contato">Contato</a>
+                        <a href="../privacidade">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Intent Marketing. Todos os direitos reservados.</p>
+                <p class="footer-made">Feito com 🧡 pela Intent Marketing</p>
+            </div>
+        </div>
+    </footer>
+<a href="https://wa.me/5511912809347?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Intent%20Marketing%20e%20quero%20um%20diagn%C3%B3stico." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+    <script src="blog-script.js"></script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "xbl0njdrvl");
+    </script>
+</body>
+</html>
+
