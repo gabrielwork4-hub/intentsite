@@ -118,11 +118,13 @@ Nenhum.
 
 **M1 — Gerador do sitemap não está versionado.**
 O commit `1a4047e` diz que a geração do `lastmod` foi automatizada, mas o `.gitignore` tem `*.py` ("Scripts de build / geracao") e nenhum script está no repo. Quem clonar o projeto não consegue regenerar os sitemaps, e o `lastmod` volta a congelar quando a máquina/pessoa que tem o script deixar de rodá-lo. Foi exatamente esse o problema corrigido em agosto (80 URLs com data anterior à última mudança real).
+*Origem do gerador: desconhecida.* Não há script em nenhum branch nem no histórico git (só `script.js` e `blog/blog-script.js`, que são do front-end), nem workflow de CI. O texto do commit descreve a regra (lastmod = último commit que mudou conteúdo), mas não o programa. Provavelmente é um `.py` local de quem fez o commit (o `.gitignore` o esconde) ou ação manual. **Ação pendente:** perguntar ao autor do commit `1a4047e` onde o script está e versioná-lo; se não for recuperável, reescrever (a regra é simples de reimplementar em Node com `git log -1 --format=%cs -- <arquivo>`).
 *Resolução:* versionar o gerador (ex.: `scripts/gerar-sitemap.js`, ou `.py` com exceção no `.gitignore`), documentar a regra (lastmod = último commit que mudou o conteúdo, ignorando commits mecânicos) e rodar em CI ou pre-commit. Esforço: baixo.
 
 **M2 — Cadeia de redirects no apex em HTTP.**
 `http://intentmarketing.com.br/` → `https://intentmarketing.com.br/` → `https://www.intentmarketing.com.br/` (2 hops). O Google segue cadeias e repassa sinal, então o impacto é pequeno, mas gasta crawl e latência em links antigos ou backlinks sem https.
 *Resolução:* na Redirect Rule da zona Cloudflare, redirecionar direto `http(s)://intentmarketing.com.br/*` → `https://www.intentmarketing.com.br/$1` (301) numa única regra. Mudança fora do repo, exige acesso ao painel Cloudflare.
+*Status: ação pendente de infra.* O repo não tem `vercel.json` nem `next.config`; o hosting é Cloudflare Pages e o `_redirects` não consegue tratar o apex (ele só vê requisições já recebidas no host `www`). A regra do apex vive na zona Cloudflare, onde nenhum arquivo versionado a alcança, então não há correção possível por PR.
 
 ### Baixos
 
