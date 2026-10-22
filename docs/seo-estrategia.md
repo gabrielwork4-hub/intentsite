@@ -23,7 +23,7 @@ Home (/)
 
 ## 2. Estrutura de silagem
 
-A silagem é feita por **links internos e por sitemap temático**, não por pastas de URL: todas as URLs de blog ficam em `/blog/post-*` (estrutura plana) e a separação lógica aparece nos 6 sitemaps. É intencional: URLs curtas, sem aninhamento e sem redirects para refatorar.
+A silagem é feita por **links internos e por sitemap temático**, não por pastas de URL: os 74 posts ficam em `/blog/post-*` (estrutura plana). Exceções: o índice `/blog/` e a pesquisa `/blog/pesquisa-benchmarks-intent`, que ficam em `/blog/` sem o prefixo `post-` e a separação lógica aparece nos 6 sitemaps. É intencional: URLs curtas, sem aninhamento e sem redirects para refatorar.
 
 **Regras 1, 2, 4, 5 e 6 estão em vigor (verificadas no código); a 3 é meta com lacuna:**
 
