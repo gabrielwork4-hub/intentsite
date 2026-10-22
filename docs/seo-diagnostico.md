@@ -87,7 +87,7 @@ Testados ao vivo:
 | `/blog/post-o-que-e-meta-ads` (e `.html`) | 301 → `/blog/post-guia-completo-meta-ads` | 1 |
 | URL inexistente | **404 real** (status 404, não soft-404) | 0 |
 
-- Nenhum loop. Nenhum destino de redirect é outro redirect.
+- Nenhum loop. Com a exceção do apex em HTTP (M2), nenhum destino de redirect é outro redirect.
 - 0 links internos usam `.html`; os 308 do Cloudflare Pages só ocorrem para links externos ou históricos.
 - `_redirects` contém só a consolidação de canibalização (`post-o-que-e-meta-ads` → pilar), com destino final 200.
 - O redirect apex→www é uma Redirect Rule da zona Cloudflare (fora do repo), conforme o comentário do próprio `_redirects`.
@@ -95,7 +95,11 @@ Testados ao vivo:
 
 ### 2.6 Meta robots — OK
 
-- 81 páginas com `index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1`.
+- Três variantes de `index, follow` (medido nos 82 HTMLs):
+  - 76 páginas: `index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1` (variante padrão).
+  - 4 páginas sem `max-video-preview`: `consultoria-seo`, `criacao-de-landing-page`, `gestao-de-trafego-pago` e `blog/index.html`.
+  - 1 página só com `index, follow`: `privacidade`.
+  - Todas são indexáveis; a diferença é só de limites de snippet, sem impacto de indexação. Tratar as 3 como o estado conhecido: uma variante nova ou um `noindex` fora de `404.html` é regressão. Normalizar as 5 páginas para a variante padrão é opcional (baixo).
 - O único `noindex, follow` é `404.html`, correto.
 - Nenhum `X-Robots-Tag` nos headers de resposta.
 - As ocorrências da palavra "noindex" em `post-google-search-console` e `post-seo-ecommerce` são texto editorial, não diretiva.
@@ -130,11 +134,19 @@ O commit `1a4047e` diz que a geração do `lastmod` foi automatizada, mas o `.gi
 Links no corpo para o serviço de destino: Landing pages 15/15, SEO 6/26, Meta Ads 2/15, Tráfego pago 2/9, Google Ads 1/5 (26 de 70 posts, pilares incluídos). O conteúdo atrai busca, mas não encaminha à conversão; a autoridade dos posts também não chega às páginas de serviço.
 *Resolução:* adicionar o bloco de CTA "Precisa de ajuda para executar?" (já existente em posts como `post-seo-tecnico`) nos 44 posts sem link, priorizando os de intenção comercial. Esforço: médio, só edição de HTML. Lista completa se obtém re-rodando a auditoria (seção 7).
 
+### Hipóteses a investigar
+
+**H1 — Sitemap enviado ao Google no host errado.** Fonte: Linear, documento "GAB-51 — Evidências por URL e dados de busca" (22/10/2026), exportações do GSC e do Bing.
+- No GSC (propriedade de domínio), o sitemap enviado é `https://intentmarketing.com.br/sitemap.xml` (apex, sem www), lido em 28/07/2026, com **0 páginas descobertas**. O host canônico é `www`, e o apex em HTTPS faz 301 para ele.
+- No Bing Webmaster Tools, o sitemap `https://www.intentmarketing.com.br/sitemap.xml` (www), enviado em 07/10 e rastreado em 20/10/2026, tem **80 URLs descobertas**.
+- A inspeção de URL no GSC mostra `post-geo` e `post-ia-generativa-seo` **fora do índice** ("URL não reconhecida pelo Google", sem sitemap detectado). O teste ao vivo de `post-geo` em 22/10/2026 diz disponível e indexável, e `post-guia-completo-seo` está indexada. Ou seja, nada na página impede a indexação, o que é coerente com a auditoria técnica.
+- **Hipótese, não causa confirmada:** o envio no host apex pode explicar a ausência de descoberta via sitemap. Para investigar: enviar `https://www.intentmarketing.com.br/sitemap.xml` ao GSC, aguardar a leitura e comparar a cobertura; depois pedir indexação das duas URLs fora do índice. Não presumir causa antes disso.
+
 ### Baixos
 
 | ID | Problema | Resolução sugerida |
 |---|---|---|
-| B1 | Cobertura real de indexação **não verificada** (sem GSC). | Seção 6: checar GSC (Páginas, Sitemaps, Inspeção de URL). |
+| B1 | Cobertura real de indexação só parcialmente conhecida: 2 URLs confirmadas fora do índice e 1 confirmada dentro (ver H1); o restante não foi inspecionado. | Enviar o sitemap `www` ao GSC e exportar o relatório de Páginas. |
 | B2 | A home não linka nenhum dos 4 pilares `guia-completo-*` (só blog, 3 serviços, pesquisa de benchmarks e privacidade). | Adicionar bloco "Guias completos" na home com os 4 pilares. |
 | B3 | `blog/post-o-que-e-meta-ads.html` continua no repo, com canonical auto-referente, embora o `_redirects` o redirecione. Se o redirect for removido por engano, o conteúdo volta a canibalizar o pilar. | Excluir o arquivo (o 301 já cobre a URL) ou apontar o canonical para o pilar. |
 | B4 | Meta descriptions acima de ~160 caracteres: `post-seo-local` (208), `post-meta-ads-para-industria` (193), `criacao-de-landing-page` (173), `consultoria-seo` (170), `gestao-de-trafego-pago` (167). Serão truncadas no SERP. | Reescrever para ≤ 155 caracteres; as 3 páginas de serviço primeiro. |
@@ -149,7 +161,7 @@ Ordem recomendada (menor esforço e maior retorno de manutenção primeiro):
 
 1. **M1** — versionar o gerador de sitemap e documentar a regra de `lastmod`. *(repo; sem risco de ranking)*
 2. **M2** — consolidar o redirect apex→www em 1 hop. *(Cloudflare; sem risco de ranking)*
-3. **B1** — validar a indexação no GSC e preencher a linha de base da seção 5. *(desbloqueia métricas reais)*
+3. **B1/H1** — enviar o sitemap do host `www` ao GSC, solicitar indexação de `post-geo` e `post-ia-generativa-seo` e completar a cobertura na seção 5. *(desbloqueia métricas reais)*
 4. **B4** — reescrever as 5 descrições longas, começando pelas 3 páginas de serviço. *(CTR)*
 5. **B3** — remover o arquivo do post redirecionado.
 6. **M3** — adicionar link para o serviço nos posts (maior ganho de conversão; pode ser feito junto com B2/B5).
@@ -159,13 +171,13 @@ O que **não** fazer: não mexer em canonical, robots.txt, hreflang ou meta robo
 
 ## 5. Métricas-alvo
 
-Não há linha de base de GSC/GA4 no repositório. Os alvos abaixo são de **saúde técnica** (mensuráveis hoje) e de **indexação** (medir no GSC; preencher "Linha de base" na primeira leitura). Alvos de tráfego e posição devem ser definidos depois dessa linha de base.
+Linhas de base de busca vêm do GSC (propriedade de domínio, Pesquisa Web) e do Bing Webmaster Tools, via Linear, documento "GAB-51 — Evidências por URL e dados de busca" (22/10/2026), exportações do GSC e do Bing. As tabelas de consultas e de páginas do GSC são separadas, então nenhuma consulta é atribuída a URL. Escopo e metodologia do Bing diferem do Google: os números não se somam. Não há dados de GA4 no repositório.
 
 | Métrica | Linha de base | Alvo | Como medir |
 |---|---|---|---|
 | Problemas críticos de SEO técnico | 0 | 0 (manter) | Repetir esta auditoria a cada release grande |
-| URLs do sitemap indexadas | _preencher (GSC)_ | ≥ 95% das 80 URLs em até 60 dias | GSC > Sitemaps / Páginas |
-| URLs em "Descobertas/Rastreadas, mas não indexadas" | _preencher (GSC)_ | ≤ 5 | GSC > Páginas |
+| URLs do sitemap indexadas | **Não medido.** GSC: sitemap enviado no host apex, 0 páginas descobertas (28/07/2026); 2 URLs confirmadas fora do índice, `post-guia-completo-seo` indexada (ver H1). Bing: 80 URLs descobertas no host `www` (20/10/2026) | ≥ 95% das 80 URLs em até 60 dias | GSC > Sitemaps / Páginas |
+| URLs em "Descobertas/Rastreadas, mas não indexadas" | _Não medido_ (exportar o relatório de Páginas do GSC) | ≤ 5 | GSC > Páginas |
 | 404/soft-404 vindos de URLs do sitemap | 0 | 0 | Crawl + GSC |
 | Canonical ≠ URL servida | 0 | 0 | Script de auditoria |
 | Redirects com mais de 1 hop | 1 (apex HTTP) | 0 | `curl -L -w '%{num_redirects}'` |
@@ -173,7 +185,7 @@ Não há linha de base de GSC/GA4 no repositório. Os alvos abaixo são de **sa�
 | Meta descriptions > 160 caracteres | 5 | 0 | Script de auditoria |
 | Páginas com ≤ 2 inlinks de corpo | 12 | 0 | Script de auditoria |
 | Posts com link para o serviço do cluster | 26 de 70 (Landing 15/15, SEO 6/26, Meta Ads 2/15, Tráfego 2/9, Google Ads 1/5) | 70 de 70 | Script de auditoria |
-| Core Web Vitals (LCP/INP/CLS) | _não medido_ | "Bom" em 75% das URLs (CrUX) | GSC > Core Web Vitals / PageSpeed |
+| Core Web Vitals (LCP/INP/CLS) | _Não medido_ | "Bom" em 75% das URLs (CrUX) | GSC > Core Web Vitals / PageSpeed |
 
 ## 6. Verificações pendentes que exigem acesso externo
 

@@ -103,16 +103,18 @@ Em ordem de esforço × efeito esperado. Validar volume de busca antes de produz
 
 ## 6. Métricas-alvo da estratégia
 
-A linha de base de GSC/GA4 ainda não está registrada. Primeiro passo: exportar os últimos 3 meses e preencher.
+Linhas de base: GSC (propriedade de domínio, Pesquisa Web, 21/07 a 20/10/2026) e Bing Webmaster Tools, conforme o documento "GAB-51 — Evidências por URL e dados de busca" (Linear, 22/10/2026). As tabelas de consultas e de páginas do GSC são separadas: não se atribui consulta a URL. Ahrefs só informa pauta, volume e dificuldade, não prova desempenho. Não há dados de GA4.
+
+GSC no período: **51 cliques, 10.113 impressões, CTR 0,5%, posição média 21,8** (exportação anterior, 20/07 a 19/10: 52 cliques e 10.081 impressões). Bing no mesmo período: 35 cliques e 18,4 mil impressões (escopo diferente; não somar).
 
 | Métrica | Linha de base | Alvo (90 dias) |
 |---|---|---|
-| URLs indexadas (de 80) | _preencher_ | ≥ 76 (95%) |
-| Cliques orgânicos / mês (GSC) | _preencher_ | +30% sobre a linha de base |
-| Impressões em consultas dos 4 pilares | _preencher_ | +40% |
-| Posição média dos 4 pilares | _preencher_ | Top 10 em ≥ 2 pilares |
-| Leads vindos de orgânico (GA4 + formulário/WhatsApp) | _preencher_ | +25% |
+| URLs indexadas (de 80) | _Não medido._ GSC com sitemap no host apex e 0 páginas descobertas; `post-geo` e `post-ia-generativa-seo` fora do índice (hipótese H1 em `seo-diagnostico.md`). Bing: 80 URLs descobertas | ≥ 76 (95%) |
+| Cliques orgânicos no GSC (janela de 90 dias) | 51 (21/07 a 20/10/2026), CTR 0,5% | +30% sobre a linha de base |
+| Impressões nas páginas dos 4 pilares (tabela de páginas do GSC) | Só `post-guia-completo-seo` aparece no extrato: 496 impressões, 0 cliques; os outros 3 pilares não constam | +40% |
+| Posição média dos 4 pilares | `post-guia-completo-seo`: 41,9 (média geral do site: 21,8); os outros 3 não constam no extrato | Top 10 em ≥ 2 pilares |
+| Leads vindos de orgânico (GA4 + formulário/WhatsApp) | _Não medido_ (sem GA4 no repositório) | +25% |
 | Páginas com ≥ 3 inlinks de corpo | 67 de 80 (13 abaixo: as 12 do B5 + `/privacidade`, que não precisa) | 79 de 80 |
-| Citações em IA (Perplexity, ChatGPT, AI Overviews) para o dataset | _não medido_ | Medir mensalmente; meta: citado em ≥ 3 consultas-alvo |
+| Citações em IA (Perplexity, ChatGPT, AI Overviews) para o dataset | _Não medido_ | Medir mensalmente; meta: citado em ≥ 3 consultas-alvo |
 
 Os alvos de crescimento são hipóteses de planejamento, não projeções; recalibrar depois da linha de base.
