@@ -14,7 +14,7 @@ O SEO técnico está **saudável**. Nenhum problema crítico: nada bloqueia a in
 | Médio | 3 | M1 (gerador do sitemap fora do repo), M2 (cadeia de 2 redirects no apex HTTP), M3 (posts sem link para o serviço) |
 | Baixo | 6 | B1 a B6 |
 
-**Limite desta auditoria:** foi feita só com os arquivos do repositório e requisições HTTP públicas. **Não houve acesso ao Google Search Console**, então "indexação confirmada" aqui significa "nada no site impede ou confunde a indexação". A confirmação real (páginas indexadas, "Descobertas, mas não indexadas", cobertura do sitemap) precisa ser feita no GSC (seção 6).
+**Fontes e limite desta auditoria:** a auditoria técnica usou os arquivos do repositório e requisições HTTP públicas. Os dados de busca vêm das exportações de GSC e Bing registradas no documento GAB-51 (Linear, 22/10/2026), sem acesso direto às ferramentas. A cobertura completa de indexação (relatório de Páginas do GSC) **continua pendente**: hoje há só 2 URLs confirmadas fora do índice e 1 dentro (H1, seção 5). Até lá, "indexação confirmada" significa apenas "nada no site impede ou confunde a indexação".
 
 ## 2. Estado atual do SEO técnico
 
