@@ -17,3 +17,10 @@ node_modules/
 Thumbs.db
 desktop.ini
 *.tmp
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
