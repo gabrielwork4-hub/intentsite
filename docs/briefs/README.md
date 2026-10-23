@@ -4,16 +4,16 @@ Lacunas encontradas depois da auditoria de linkagem (GAB-55). Os silos: SEO (hub
 
 ## Status de aprovação
 
-**Os 3 posts novos (GAB-57) estão aguardando aprovação do responsável.** Pelo Linear, nenhuma pauta ou volume é aprovado antecipadamente, e novas URLs só saem depois da revisão das existentes, do GAB-55 e de briefs aprovados. Os posts estão no PR #14 ([EM ESPERA], rascunho), separado deste PR, e não devem ir ao ar sem essa aprovação.
+**Os 3 posts novos (GAB-57) foram aprovados pelo responsável em 23/10/2026**, junto com os briefs 01, 02 e 03. As capas reutilizadas ficam como estão (decisão do responsável). Os posts estão no PR #14, separado deste PR.
 
-Para aprovar, o responsável precisa:
+Itens que o responsável tinha de resolver:
 
-1. Aprovar cada brief (01, 02 e 03) e a pauta correspondente.
-2. Decidir a keyword alvo do brief 03 (ver abaixo).
-3. Confirmar que a revisão das URLs existentes e o GAB-55 estão fechados.
-4. Conferir os fatos que os briefs sinalizam (rich results de FAQ e HowTo no brief 02).
-5. Definir as imagens de capa. Os posts reutilizam imagens de outros posts.
-6. Corrigir o envio do sitemap no Search Console (ver evidência abaixo), para que as URLs novas possam ser descobertas.
+1. Aprovar cada brief (01, 02 e 03) e a pauta correspondente. **Feito em 23/10/2026.**
+2. Decidir a keyword alvo do brief 03. **Feito: "teste ab".**
+3. Confirmar que a revisão das URLs existentes e o GAB-55 estão fechados. **Não registrado aqui.**
+4. Conferir os fatos que os briefs sinalizam. **Posts aprovados em 23/10/2026.**
+5. Definir as imagens de capa. **Feito: ficam as capas reutilizadas.**
+6. Corrigir o envio do sitemap no Search Console (ver evidência abaixo), para que as URLs novas possam ser descobertas. **Em aberto.**
 
 ## Como as lacunas foram achadas
 
@@ -41,18 +41,18 @@ Ahrefs Keywords Explorer, Brasil, média dos últimos 12 meses, extraído em 22/
 |---|---|---|---|---|
 | 01 | intenção de busca | 200 | 1 | 20 |
 | 02 | schema markup | 800 | 59 | não confiável (parent topic com erro de grafia) |
-| 03 | teste A/B landing page | 0 (e "teste ab" = 800, KD 11, TP 1.700) | | |
+| 03 | teste ab (escolhida em 23/10/2026; "teste A/B landing page" voltou 0) | 800 | 11 | 1.700 |
 | 04 | performance max | 250 | 0 | 300 |
 
-**Decisão pendente no brief 03:** a keyword alvo não tem volume medido e "teste ab" tem 800. O post no PR #14 mantém a keyword original e não foi alterado; trocar o alvo para "teste A/B" é sugestão para o responsável aprovar.
+**Decisão no brief 03 (23/10/2026):** o responsável escolheu "teste ab" como keyword alvo (800, KD 11, TP 1.700).
 
 ## Fila
 
 | # | Brief | Silo | Intenção | Status |
 |---|-------|------|----------|--------|
-| 01 | [Intenção de busca](01-intencao-de-busca.md) | SEO | Informacional | Post no PR #14, aguardando aprovação |
-| 02 | [Schema markup](02-schema-markup.md) | SEO | Informacional / how-to | Post no PR #14, aguardando aprovação |
-| 03 | [Teste A/B em landing page](03-teste-ab-landing-page.md) | Landing Pages | Informacional / how-to | Post no PR #14, aguardando aprovação |
+| 01 | [Intenção de busca](01-intencao-de-busca.md) | SEO | Informacional | Post no PR #14, aprovado pelo responsável em 23/10/2026 |
+| 02 | [Schema markup](02-schema-markup.md) | SEO | Informacional / how-to | Post no PR #14, aprovado pelo responsável em 23/10/2026 |
+| 03 | [Teste A/B em landing page](03-teste-ab-landing-page.md) | Landing Pages | Informacional / how-to | Post no PR #14, aprovado pelo responsável em 23/10/2026 |
 | 04 | [Performance Max](04-performance-max.md) | Google Ads | Informacional | Backlog |
 
 ## Lacunas menores (sem brief)

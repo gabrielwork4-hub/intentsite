@@ -2,11 +2,11 @@
 
 - **URL:** `/blog/post-teste-ab-landing-page`
 - **Silo / hub:** Landing Pages, hub `post-guia-completo-landing-page`
-- **Keyword alvo:** teste A/B landing page
-- **Secundárias:** teste ab, como fazer teste A/B, o que testar em uma landing page, ferramentas de teste A/B, split test, significância estatística
+- **Keyword alvo:** teste ab (escolhida pelo responsável em 23/10/2026; volume 800 BR, KD 11, TP 1.700, Ahrefs 22/10/2026)
+- **Secundárias:** teste a/b, teste ab landing page, como fazer teste ab, o que testar em uma landing page, ferramentas de teste A/B, split test, significância estatística
 - **Intenção:** informacional / how-to. SERP confirmada: guias (Conversion, Fm2s, Stone, Empreender, HeroSpark).
 - **Formato que o Google premia:** definição curta, passo a passo, lista do que testar, duração e significância, ferramentas.
-- **Estimativa Ahrefs (BR, média 12 meses, 22/10/2026; não prova desempenho de URL):** teste ab 800 (KD 11, TP 1.700); significância estatística 60 (KD 0, TP 100); split test 40 (KD 3, TP 10); "teste a/b landing page" e "como fazer teste a/b" voltaram 0 (abaixo do limiar de medição, não prova de demanda zero). **Ponto para o responsável decidir:** a keyword alvo deste brief não tem volume medido no Ahrefs, e "teste ab" (800) é o termo com demanda estimada. O post no PR #14 mantém a keyword original; trocar para "teste A/B" como alvo, com "landing page" como modificador, é uma sugestão a aprovar, não uma mudança feita. Title, H1 e slug do post já começam por "Teste A/B".
+- **Estimativa Ahrefs (BR, média 12 meses, 22/10/2026; não prova desempenho de URL):** teste ab 800 (KD 11, TP 1.700); significância estatística 60 (KD 0, TP 100); split test 40 (KD 3, TP 10); "teste a/b landing page" e "como fazer teste a/b" voltaram 0 (abaixo do limiar de medição, não prova de demanda zero). **Decisão do responsável (23/10/2026):** a keyword alvo é "teste ab" (800, KD 11, TP 1.700). "teste ab landing page" passa a secundária e continua na redação. Na meta keywords do post, "teste ab" vem primeiro. Title, H1, description e redação do post não foram alterados; eles já usam "Teste A/B" (com barra) desde o início.
 - **Title (<=60):** Teste A/B em Landing Page: Passo a Passo e o Que Testar
 - **Meta (<=155):** Como fazer teste A/B em landing page: hipótese, uma variável por vez, quanto tempo rodar, tráfego mínimo e o que testar primeiro para converter mais.
 
@@ -18,7 +18,7 @@
 - H2 Passo a passo
   - H3 Hipótese / H3 Uma variável por vez / H3 Divisão de tráfego / H3 Duração / H3 Leitura do resultado
 - H2 O que testar primeiro (título, oferta, CTA, formulário, prova social, imagem principal)
-- H2 Ferramentas (VWO, Optimizely, AB Tasty, RD Station; experimentos do Google Ads e teste A/B do Meta Ads; aviso: Google Optimize encerrado em 2023)
+- H2 Ferramentas (VWO, Optimizely, AB Tasty, RD Station; experimentos do Google Ads e teste A/B do Meta Ads; aviso: Google Optimize encerrado em setembro de 2023)
 - H2 Como testar em página HTML estática (duas URLs com split por anúncio)
 - H2 Erros comuns (parar cedo, testar duas coisas, comparar períodos diferentes)
 - H2 Perguntas frequentes

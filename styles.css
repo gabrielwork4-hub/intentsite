@@ -2355,6 +2355,10 @@ input, select, textarea {
 .post-content li::marker { color: var(--orange); }
 
 .post-content table { margin-bottom: 22px; }
+.post-content pre { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px 18px; margin: 0 0 22px; overflow-x: auto; font-size: 0.85rem; line-height: 1.6; }
+.post-content code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; color: var(--text); }
+.post-content p code, .post-content li code { background: var(--bg-card); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; }
+.post-content pre code { background: none; border: 0; padding: 0; }
 .post-content .benchmark-box { margin: 26px 0; }
 
 /* --- blocos de destaque --- */
